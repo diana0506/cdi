@@ -14,6 +14,14 @@
         -webkit-background-clip: text;
         color: transparent;
     }
+
+    figure {
+        overflow: hidden;
+        img {
+            width: auto;
+            height: 12rem;
+        }
+    }
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }
