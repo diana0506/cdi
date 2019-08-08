@@ -66,7 +66,11 @@ body {
     display: block;
     font-size: 4.6rem;
     font-weight: 400;
+<<<<<<< HEAD
+    animation-name: moveInLeft;
+=======
     text-transform: uppercase;
+>>>>>>> 58e3be050e4da2a0df2a348e328a8cc61d1f52ac
     animation-duration: 1s;
     animation-timing-function: ease-out;
     /*
@@ -76,6 +80,10 @@ body {
   .heading-primary--sub {
     display: block;
     font-size: 1.6rem;
+<<<<<<< HEAD
+    font-weight: 700;
+    animation: moveInRight 1s ease-out; }
+=======
     font-weight: 700; }
 
 .active .heading-primary--main {
@@ -85,6 +93,7 @@ body {
 
 .active .heading-primary--sub {
   animation: moveInRight 1s ease-out; }
+>>>>>>> 58e3be050e4da2a0df2a348e328a8cc61d1f52ac
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -231,6 +240,11 @@ body {
     background-image: linear-gradient(to right, #0071bc, #163874);
     -webkit-background-clip: text;
     color: transparent; }
+  .feature-box figure {
+    overflow: hidden; }
+    .feature-box figure img {
+      width: auto;
+      height: 12rem; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -316,6 +330,9 @@ body {
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
+    text-align: right; }
+=======
     text-align: right;
     z-index: 2; }
   .header__company-info {
@@ -376,6 +393,7 @@ body {
           font-size: 2.8rem;
           padding: 1rem;
           color: #163874; }
+>>>>>>> 58e3be050e4da2a0df2a348e328a8cc61d1f52ac
 
 .section-about {
   background-color: #f7f7f7;
@@ -384,8 +402,9 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 113, 188, 0.8), rgba(22, 56, 116, 0.8)), url(../img/salt.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 113, 188, 0.8), rgba(22, 56, 116, 0.8)), url("https://media.gettyimages.com/photos/salt-mining-in-salar-de-uyuni-picture-id118365447?k=6&m=118365447&s=612x612&w=0&h=B-UWxQXvElrWeE2Jhdlo-zknMPNKmJ3FCL0apeEM3c0=");
   background-size: cover;
+  background-position: center center;
   transform: skewY(-7deg);
   margin-top: -10rem; }
   .section-features > * {
