@@ -6,8 +6,9 @@
 
 .section-features {
     padding: 20rem 0;
-    background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../img/nat-4.jpg);
+    background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("https://media.gettyimages.com/photos/salt-mining-in-salar-de-uyuni-picture-id118365447?k=6&m=118365447&s=612x612&w=0&h=B-UWxQXvElrWeE2Jhdlo-zknMPNKmJ3FCL0apeEM3c0=");
     background-size: cover;
+    background-position: center center;
     transform: skewY(-7deg);
     margin-top: -10rem;
     &>* {

@@ -1,14 +1,16 @@
 {
-    "name": "natours",
+    "name": "cdi-grup",
     "version": "1.0.0",
-    "description": "landing page for natours",
+    "description": "SARE LA STANDARDE INALTE DE CALITATE",
     "main": "index.js",
     "scripts": {
-        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+        "compile:sass": "node-sass sass/main.scss css/style.css -w",
+        "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "node-sass": "^4.12.0"
+        "node-sass": "^4.12.0",
+        "nodemon": "^1.19.1"
     }
 }

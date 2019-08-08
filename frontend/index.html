@@ -7,43 +7,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="css/icon-font.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://kit.fontawesome.com/45638df98b.js"></script>
+
     <link rel="shortcut icon" href="">
 </head>
 
 <body>
-    <!-- <header class="header__container">
-        <aside class="company__container">
-            <img src="img/cdi_group.svg" class="logo" alt="Image">
-            <ul>
-                <li>
-                    <span>Specialisti in sare</span>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
-        </aside>
-        <nav class="nav__container"></nav>
-        <div class="slider__content"></div>
-    </header> -->
     <header class="header">
-        <div class="header__logo-box">
-            <img src="img/cdi_group.svg" alt="logo" class="header__logo">
+        <div class="header__company-info">
+            <div class="header__logo-box">
+                <img src="img/cdi_group.svg" alt="logo" class="header__logo">
+                <div class="count-slider">
+                    <span class="count-slider__current">01</span>
+                    <span class="count-slider__total">/03</span>
+                </div>
+                <div class="controls">
+                    <a class="controls__arrow controls__arrow--prev">
+                        <i class="fas fa-angle-left"></i>
+                    </a>
+                    <a class="controls__arrow controls__arrow--next">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="info">
+                <span class="slogan">SPECIALISTI IN SARE</span>
+                <div class="social">
+                    <a href="">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
         </div>
+
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">Sare la standarde inalte de calitate</span>
-                <span class="heading-primary--sub">Sare oferita de CDI Distribution Grup SRL este 
-                     de cea mai inalta calitate si este utilizata la instalatiile cabinet,
-                      osmoza inversa, statii de filtrare si in special pentru statii de dedurizare.</span>
+                <span class="heading-primary--sub">Sare oferita de CDI Distribution Grup SRL este de cea mai inalta calitate si este utilizata la instalatiile
+                    cabinet, osmoza inversa, statii de filtrare si in special pentru statii de dedurizare.</span>
             </h1>
             <a href="#" class="btn btn--white btn--animated">Vezi oferta completa</a>
         </div>
+        <div class="header__overlay"></div>
     </header>
 
     <main>
@@ -56,29 +65,38 @@
             <div class="row">
                 <div class="col-1-of-2">
                     <h3 class="heading-tertiary u-margin-buttom-small">Gata sa raspundem prompt solicitarilor clientilor nostrii</h3>
-                    <p class="paragraph">CDI Distribution Grup este o firma privata cu capital integral romanesc, care si-a inceput activitatea in 2004. A urmat o evolutie ascendenta in topul firmelor private de distributie din Romania. Ne-am remarcat in primul rand prin
-                        preturi competitive, servicii de calitate, flexibilitate in comunicarea cu clientii promptitudine si comunicare 24/24 oricand si oriunde pe orice distanta.
+                    <p class="paragraph">CDI Distribution Grup este o firma privata cu capital integral romanesc, care si-a inceput activitatea
+                        in 2004. A urmat o evolutie ascendenta in topul firmelor private de distributie din Romania. Ne-am
+                        remarcat in primul rand prin preturi competitive, servicii de calitate, flexibilitate in comunicarea
+                        cu clientii promptitudine si comunicare 24/24 oricand si oriunde pe orice distanta.
                     </p>
                     <h3 class="heading-tertiary u-margin-buttom-small">Calitate, promptitudine si experienta</h3>
-                    <p class="paragraph">Calitate acreditata international.<br> Logistica eficienta.<br> Expertiza in sare.
+                    <p class="paragraph">Calitate acreditata international.
+                        <br> Logistica eficienta.
+                        <br> Expertiza in sare.
                     </p>
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img src="https://media.gettyimages.com/photos/salt-pond-picture-id175603484?k=6&m=175603484&s=612x612&w=0&h=H0cBJ6uM1ytpmOCtuXTdas5bkcHETSJGDWrH7Vu-fLI="
+                            alt="Photo 1" class="composition__photo composition__photo--p1">
+                        <img src="https://media.gettyimages.com/photos/salt-mining-in-salar-de-uyuni-picture-id118365447?k=6&m=118365447&s=612x612&w=0&h=B-UWxQXvElrWeE2Jhdlo-zknMPNKmJ3FCL0apeEM3c0="
+                            alt="Photo 2" class="composition__photo composition__photo--p2">
+                        <img src="https://media.gettyimages.com/photos/excavator-at-work-in-a-salt-mine-picture-id97659971?k=6&m=97659971&s=612x612&w=0&h=tIMJECJ6EO-5PD2bHHFr_P18yKeLrqAfdCFl7wR1EWw="
+                            alt="Photo 3" class="composition__photo composition__photo--p3">
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="section-features">
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
+                        <figure>
+                            <img src="https://media.gettyimages.com/photos/excavator-at-work-in-a-salt-mine-picture-id97659971?k=6&m=97659971&s=612x612&w=0&h=tIMJECJ6EO-5PD2bHHFr_P18yKeLrqAfdCFl7wR1EWw=" alt="">
+                        </figure>
                         <i class="feature-box__icon icon-basic-world"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Materie prima</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
                         </p>
@@ -87,8 +105,11 @@
 
                 <div class="col-1-of-4">
                     <div class="feature-box">
+                        <figure>
+                            <img src="https://media.gettyimages.com/photos/heap-of-salt-by-machinery-against-blue-sky-picture-id705182427?k=6&m=705182427&s=612x612&w=0&h=ojCj_1FxFEbuqh2scC0IuHwnPnYDGl-a9-dWbHZsqYQ=" alt="">
+                        </figure>
                         <i class="feature-box__icon icon-basic-compass"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Procesare</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
                         </p>
@@ -97,18 +118,25 @@
 
                 <div class="col-1-of-4">
                     <div class="feature-box">
-                        <i class="feature-box__icon icon-basic-map"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-1-of-4">
-                    <div class="feature-box">
+                        <figure>
+                            <img src="https://i.pinimg.com/originals/4e/ac/fe/4eacfe52817759181bddc641118782cc.jpg" alt="">
+                        </figure>
                         <i class="feature-box__icon icon-basic-heart"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
+                        
+                        <h3 class="heading-tertiary u-margin-bottom-small">Logistica</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <figure>
+                            <img src="https://logistic.bg/wp-content/uploads/2018/01/courier_insurance.jpg" alt="">
+                        </figure>
+                        <i class="feature-box__icon icon-basic-heart"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Livrare</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
                         </p>
@@ -338,6 +366,7 @@
             </div>
         </div>
     </section>  -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
