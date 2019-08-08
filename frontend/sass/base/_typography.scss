@@ -85,14 +85,27 @@ body {
 }
 
 .heading-clip-animation {
-    font-size: $xxl-font-size;
-    font-family: futura;
-    font-size: 40rem;
-    font-weight: bold;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: url('../img/salt.jpg');
-    animation: clipAnimation 100s linear infinite;
-    -webkit-animation: clipAnimation 100s linear infinite;
+    display: flex;
+    align-items: center;
+    &--main {
+        font-size: $xxl-font-size;
+        font-family: futura;
+        font-size: 40rem;
+        font-weight: bold;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: url('../img/salt.jpg');
+        animation: clipAnimation 100s linear infinite;
+        -webkit-animation: clipAnimation 100s linear infinite;
+    }
+    &--sub {
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        margin-top: 20rem;
+        color: $color-primary-dark;
+        span {
+            color: $color-primary-light;
+        }
+    }
 }
