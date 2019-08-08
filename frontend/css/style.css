@@ -26,6 +26,18 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes clipAnimation {
+  from {
+    background-position: 0px center; }
+  to {
+    background-position: 2000px center; } }
+
+@-webkit-keyframes clipAnimation {
+  from {
+    background-position: 0px center; }
+  to {
+    background-position: 2000px center; } }
+
 *,
 *::after,
 *::before {
@@ -99,6 +111,18 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.heading-clip-animation {
+  font-size: 40rem;
+  font-family: futura;
+  font-size: 40rem;
+  font-weight: bold;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url("../img/salt.jpg");
+  animation: clipAnimation 100s linear infinite;
+  -webkit-animation: clipAnimation 100s linear infinite; }
 
 .u-center-text {
   text-align: center; }

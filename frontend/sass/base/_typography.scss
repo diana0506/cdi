@@ -83,3 +83,16 @@ body {
         margin-bottom: 3rem;
     }
 }
+
+.heading-clip-animation {
+    font-size: $xxl-font-size;
+    font-family: futura;
+    font-size: 40rem;
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url('../img/salt.jpg');
+    animation: clipAnimation 100s linear infinite;
+    -webkit-animation: clipAnimation 100s linear infinite;
+}
