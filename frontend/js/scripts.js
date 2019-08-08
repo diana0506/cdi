@@ -78,3 +78,10 @@
 
     slider();
   
+
+function initMap() {
+    const map = new google.maps.Map(document.getElementById('map1'), {
+        zoom: 10,
+        center: { lat: 43.6999999, lng: -79.018469 },
+    });
+}

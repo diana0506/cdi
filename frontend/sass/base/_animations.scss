@@ -36,3 +36,13 @@
         transform: translate(0);
     }
 }
+
+
+@keyframes clipAnimation {
+    from { background-position: 0px center; }
+    to { background-position: 2000px center; }
+}
+@-webkit-keyframes clipAnimation {
+    from { background-position: 0px center; }
+    to { background-position: 2000px center; }
+}
