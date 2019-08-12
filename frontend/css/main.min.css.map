@@ -18,6 +18,7 @@
         "../sass/components/_map.scss",
         "../sass/layout/_grid.scss",
         "../sass/layout/_header.scss",
+        "../sass/layout/_navigation.scss",
         "../sass/layout/_footer.scss",
         "../sass/pages/_home.scss",
         "../sass/pages/_products.scss"
