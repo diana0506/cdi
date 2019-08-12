@@ -23,8 +23,19 @@
         list-style: none;
 
         li {
+            position: relative;
             &:first-child {
                 margin-right: auto;
+                a {
+                    background-image: none;
+                }
+
+                &:hover {
+                    a {
+                        color: $color-white;
+                        transform: none;
+                    }
+                }
             }
 
             a {
@@ -33,10 +44,15 @@
                 color: $color-white;
                 text-decoration: none;
                 text-transform: uppercase;
-                transition: all 280ms;
+                background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+                background-size: 250%;
+                transition: all .4s;
+                display: inline-block;
 
                 &:hover {
                     color: $color-primary-dark;
+                    background-position: 100%;
+                    transform: translateX(1rem);
                 }
             }
             
