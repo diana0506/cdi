@@ -47,13 +47,13 @@
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('https://cdn.shopify.com/s/files/1/1192/7874/files/Hard_vs_Soft_water_2048x2048.jpg?v=1529025333');
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url('https://media.wired.com/photos/59322c9eb8eb31692072dfaa/master/w_2048,c_limit/6299389015_f507b3c02e_o.jpg');
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url('https://acuro.files.wordpress.com/2016/06/nice_3d_water_desktop_wallpaper_backgroud.jpg?w=523&h=295');
         }
     }
     &__heading {
