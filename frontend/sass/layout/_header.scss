@@ -9,7 +9,39 @@
     background-repeat: no-repeat;
 
     -webkit-transition: background-image .2s linear;
-    transition: background-image .2s linear;  
+    transition: background-image .2s linear;
+    
+    &__menu {
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        width: calc(100% - 35rem);
+        flex: 1 1 auto;
+        justify-content: flex-end;
+        margin-left: 35rem;
+        padding: 6rem;
+        list-style: none;
+
+        li {
+            &:first-child {
+                margin-right: auto;
+            }
+
+            a {
+                padding: 2rem;
+                font-size: 1.6rem;
+                color: $color-white;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all 280ms;
+
+                &:hover {
+                    color: $color-primary-dark;
+                }
+            }
+            
+        }
+    }
 
     &__overlay {
         background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));

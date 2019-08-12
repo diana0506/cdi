@@ -75,3 +75,52 @@ const slider = () => {
 
 };
 slider();
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 7,
+    disableDefaultUI: true,
+    center: {lat: 45.34994243613083, lng: 23.033166749999964}
+  });
+
+  setMarkers(map);
+}
+
+var locations = [
+  ['Bucuresti', 44.4363, 26.09835, 2],
+  ['Timisoara', 45.76999, 21.19844, 1]
+];
+
+function setMarkers(map) {
+  // Adds markers to the map.
+
+  // Marker sizes are expressed as a Size of X,Y where the origin of the image
+  // (0,0) is located in the top left of the image.
+
+  // Origins, anchor positions and coordinates of the marker increase in the X
+  // direction to the right and in the Y direction down.
+  var image = {
+    url: 'img/pin.png',
+    // This marker is 20 pixels wide by 32 pixels high.
+    size: new google.maps.Size(100, 100),
+   
+  };
+  // Shapes define the clickable region of the icon. The type defines an HTML
+  // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+  // The final coordinate closes the poly by connecting to the first coordinate.
+  var shape = {
+    coords: [1, 1, 1, 20, 18, 20, 18, 1],
+    type: 'poly'
+  };
+  for (var i = 0; i < locations.length; i++) {
+    var location = locations[i];
+    var marker = new google.maps.Marker({
+      position: {lat: location[1], lng: location[2]},
+      map: map,
+      icon: image,
+      shape: shape,
+      title: location[0],
+      zIndex: location[3]
+    });
+  }
+}
