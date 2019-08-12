@@ -1,0 +1,44 @@
+.map {
+    height: 48rem;
+}
+
+.section-map__details {
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+    width: 32rem;
+    padding: 4rem;
+    background-color: $color-primary;
+    z-index: 9;
+    box-shadow: $box-shadow-xxl;
+
+    h1 {
+        color: $color-white;
+        font-size: 2rem;
+        margin-bottom: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    figure {
+        position: relative;
+        height: 16rem;
+        margin: -4rem -4rem 2rem;
+        overflow: hidden;
+        background-image: linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url('//geo3.ggpht.com/cbk?panoid=EO4-bRVwkI_IWWnJRv8Y7A&output=thumbnail&cb_client=search.LOCAL_UNIVERSAL.gps&thumb=2&w=227&h=160&yaw=284.053&pitch=0&thumbfov=100');
+        background-size: cover;
+        img {
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    ul {
+        li {
+            display: flex;
+            flex-direction: column;
+            color: $color-white;
+            font-size: 1.6rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+}

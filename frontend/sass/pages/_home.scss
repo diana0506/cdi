@@ -18,8 +18,8 @@
 
 .section-tours {
     background-color: $color-grey-light-1;
-    padding: 25rem 0 5rem 0;
-    margin-top: -25vh;
+    padding: 30rem 0 5rem 0;
+    margin-top: -20vh;
 }
 
 .section-experience {
@@ -30,7 +30,7 @@
     .overlay-bg {
         position: absolute;
         z-index: -1;
-        opacity: .1;
+        opacity: .2;
         top: 0;
         left: 0;
         width: 100%;
@@ -40,11 +40,16 @@
         background-size: cover;
         background-position: center center;
     }
-    padding: 5rem 0 5rem 0;
+    // padding: 5rem 0 5rem 0;
     margin-top: -10rem;
 }
 
 .section-stories {
     padding: 15rem 0;
     background-color: $color-grey-light-1;
+}
+
+
+.section-map {
+    position: relative;
 }
