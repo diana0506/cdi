@@ -1,4 +1,5 @@
 .navigation {
+    display: none;
     &__checkbox {
         display: none;
     }
@@ -125,4 +126,6 @@
         top: 0;
         transform: rotate(-135deg);
     }
+
+   
 }
