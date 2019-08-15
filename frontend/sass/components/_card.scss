@@ -1,4 +1,5 @@
 .card {
+    // FUNCTIONALITY
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -10,6 +11,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
@@ -18,7 +20,6 @@
             background-color: $color-white;
         }
         &--back {
-            background-color: green;
             transform: rotateY(180deg);
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
@@ -37,7 +38,7 @@
     &:hover &__side--back {
         transform: rotateY(0);
     }
-    //FRONT SIDE STYLING
+    // FRONT SIDE STYLING
     &__picture {
         background-size: cover;
         height: 23rem;
@@ -47,13 +48,13 @@
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('https://cdn.shopify.com/s/files/1/1192/7874/files/Hard_vs_Soft_water_2048x2048.jpg?v=1529025333');
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url('https://media.wired.com/photos/59322c9eb8eb31692072dfaa/master/w_2048,c_limit/6299389015_f507b3c02e_o.jpg');
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url('https://acuro.files.wordpress.com/2016/06/nice_3d_water_desktop_wallpaper_backgroud.jpg?w=523&h=295');
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
         }
     }
     &__heading {
@@ -97,7 +98,7 @@
             }
         }
     }
-    //FRONT SIDE STYLING
+    // FRONT SIDE STYLING
     &__cta {
         position: absolute;
         top: 50%;
@@ -108,7 +109,7 @@
     }
     &__price-box {
         text-align: center;
-        color: white;
+        color: $color-white;
         margin-bottom: 8rem;
     }
     &__price-only {
@@ -118,5 +119,43 @@
     &__price-value {
         font-size: 6rem;
         font-weight: 100;
+    }
+    //@include respond(tab-port) {
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        &__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+            &--back {
+                transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+        &__details {
+            padding: 1rem 3rem;
+        }
+        // FRONT SIDE STYLING
+        &__cta {
+            position: relative;
+            top: 0%;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 7rem 4rem 4rem 4rem;
+        }
+        &__price-box {
+            margin-bottom: 3rem;
+        }
+        &__price-value {
+            font-size: 4rem;
+        }
     }
 }

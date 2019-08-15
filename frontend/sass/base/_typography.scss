@@ -4,7 +4,6 @@ body {
     /*font-size: 16px;*/
     line-height: 1.7;
     color: $color-grey-dark;
-    // padding: 3rem;
 }
 
 .heading-primary {
@@ -24,6 +23,10 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
     }
     &--sub {
         display: block;
@@ -31,6 +34,9 @@ body {
         font-weight: 700;
         // letter-spacing: .5rem;
         //animation: moveInRight 1s ease-out;
+    }
+    @include respond(phone) {
+        letter-spacing: .5rem;
     }
 }
 
@@ -54,6 +60,7 @@ body {
     display: inline-block;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
@@ -61,6 +68,12 @@ body {
     //     transform: skewY(2deg) skewX(15deg) scale(1.1);
     //     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     // }
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 }
 
 .heading-tertiary {
@@ -92,6 +105,9 @@ body {
         background-image: url('../img/salt.jpg');
         animation: clipAnimation 100s linear infinite;
         -webkit-animation: clipAnimation 100s linear infinite;
+        @include respond(phone) {
+            font-size: 20rem;
+        }
     }
     &--sub {
         font-size: 2.6rem;
@@ -101,9 +117,20 @@ body {
         span {
             color: $color-primary-light;
         }
+        @include respond(phone) {
+            font-size: 2.6rem;
+            margin-top: 0;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            span {
+                font-size: 4rem;
+            }
+        }
+    }
+    @include respond(phone) {
+        flex-direction: column;
     }
 }
-
 
 .product-title {
     text-transform: uppercase;
