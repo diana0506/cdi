@@ -15,6 +15,45 @@
 </head>
 
 <body>
+    <header class="header header--products">
+        <ul class="header__menu">
+            <li>
+                <a href="tel:+40723123123">+40 723 123 123</a>
+            </li>
+            <li>
+                <a href="index.html">Acasa</a>
+            </li>
+            <li>
+                <a href="">Despre noi</a>
+            </li>
+            <li>
+                <a href="products.html">Produse</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="header__company-info">
+            <div class="header__logo-box">
+                <img src="img/cdi_group.svg" alt="logo" class="header__logo">
+            </div>
+            <div class="info info--no-rotate">
+                <span class="slogan">SPECIALISTI IN SARE</span>
+                <div class="social">
+                    <a href="">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__overlay"></div>
+    </header>
     <section class="section-book">
         <div class="row">
             <div class="book">
@@ -22,40 +61,55 @@
                     <form action="#" class="form">
                         <div class="u-margin-bottom-medium">
                             <h2 class="heading-secondary">
-                                Start booking now
+                                Cerere oferta
                             </h2>
                         </div>
 
                         <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                            <label for="name" class="form__label">Full name</label>
+                            <input type="text" class="form__input" placeholder="ex: Popescu Ion" id="name" required>
+                            <label for="name" class="form__label">Nume complet</label>
                         </div>
 
                         <div class="form__group">
-                            <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                            <label for="email" class="form__label">Email address</label>
+                            <input type="email" class="form__input" placeholder="ex: popescu.ion@email.ro" id="email" required>
+                            <label for="email" class="form__label">Email</label>
                         </div>
 
-                        <div class="form__group u-margin-bottom-medium">
+                        <div class="form__group">
+                            <input type="phone" class="form__input" placeholder="ex: 07xx xxx xxx" id="phone" required>
+                            <label for="phone" class="form__label">Telefon</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="ex: 20kg" id="qnt" required>
+                            <label for="qnt" class="form__label">Cantitate</label>
+                        </div>
+
+                        <div class="form__group">
+                            <textarea class="form__input" placeholder="Mesajul tau" id="message" required></textarea>
+                            <label for="message" class="form__label">Mesaj</label>
+                        </div>
+
+                        <!-- <div class="form__group u-margin-bottom-medium">
                             <div class="form__radio-group">
                                 <input type="radio" class="form__radio-input" id="small" name="size">
                                 <label for="small" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Small tour group
-                                        </label>
+                                    <span class="form__radio-button"></span>
+                                    Persoana fizica
+                                </label>
                             </div>
 
                             <div class="form__radio-group">
                                 <input type="radio" class="form__radio-input" id="large" name="size">
                                 <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Large tour group
-                                        </label>
+                                    <span class="form__radio-button"></span>
+                                    Persoana juridica
+                                </label>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="form__group">
-                            <button class="btn btn--green">Next step &rarr;</button>
+                            <button class="btn btn--green">Trimite &rarr;</button>
                         </div>
                     </form>
                 </div>
@@ -76,10 +130,14 @@
                 <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
                 <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
                 <p class="popup__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum
-                    neque egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Proin fermentum leo
-                    vel orci porta non pulvinar neque laoreet. Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit.
-                    Amet massa vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi porta.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet
+                    massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae
+                    semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget gravida cum
+                    sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Gravida neque
+                    convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet
+                    nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa vitae tortor condimentum
+                    lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi porta.
                 </p>
                 <a href="#" class="btn btn--green">Book now</a>
             </div>
@@ -117,8 +175,10 @@
             </div>
             <div class="col-1-of-2">
                 <p class="footer__copyright">
-                    <a href="#" class="footer__link">CDI Distribution Grup</a> este o firma privata cu capital integral romanesc, care si-a inceput activitatea in 2004. A urmat o evolutie ascendenta
-                    <a href="#" class="footer__link">in topul firmelor private de distributie</a> din Romania. Ne-am remarcat in primul rand prin preturi competitive, servicii de calitate, flexibilitate in comunicarea cu clientii promptitudine si comunicare
+                    <a href="#" class="footer__link">CDI Distribution Grup</a> este o firma privata cu capital integral romanesc, care si-a inceput activitatea
+                    in 2004. A urmat o evolutie ascendenta
+                    <a href="#" class="footer__link">in topul firmelor private de distributie</a> din Romania. Ne-am remarcat in primul rand prin preturi
+                    competitive, servicii de calitate, flexibilitate in comunicarea cu clientii promptitudine si comunicare
                     24/24 oricand si oriunde pe orice distanta.
                 </p>
             </div>
