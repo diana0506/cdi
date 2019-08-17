@@ -24,6 +24,7 @@ html {
 
 body {
     box-sizing: border-box;
+    position: relative;
     @include respond(tab-port) {
         padding: 0;
     }

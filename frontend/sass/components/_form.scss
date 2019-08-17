@@ -42,6 +42,11 @@
         visibility: hidden;
         transform: translateY(-4rem);
     }
+    &__input:focus+&__label {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
     &__radio-group {
         width: 49%;
         display: inline-block;

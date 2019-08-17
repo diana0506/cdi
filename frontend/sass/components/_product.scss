@@ -1,0 +1,32 @@
+.single-product {
+    position: relative;
+    z-index: 2;
+    margin-left: -20rem;
+    display: flex;
+
+    &__specs {
+        flex: 1 1 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        padding: 1.6rem;
+        background-color: $color-white;
+        font-size: 1.6rem;
+        width: calc(50% - 3.2rem);
+        margin: 1.6rem;
+        border-radius: .8rem;
+        box-shadow: $box-shadow-xs;
+        h3 {
+            color: $color-secondary-light;
+            font-size: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
