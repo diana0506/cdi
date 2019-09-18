@@ -8,6 +8,10 @@
         flex: 1 1 auto;
         display: flex;
         flex-wrap: wrap;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
     }
 
     &__info {
@@ -27,6 +31,24 @@
             list-style: none;
             padding: 0;
             margin: 0;
+        }
+
+        @include respond(phone) {
+            margin: 0 0 1.6rem;
+            width: 100%;
+        
+        }
+    }
+
+    @include respond(phone) {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+
+        figure {
+            img {
+                width: 100%;
+            }
         }
     }
 }
