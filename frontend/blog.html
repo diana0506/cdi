@@ -10,6 +10,27 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toogle">
+        <label for="navi-toogle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="index.html" class="navigation__link">Acasa</a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Despre noi</a></li>
+                <li class="navigation__item">
+                    <a href="products.html" class="navigation__link">Produse</a></li>
+                <li class="navigation__item">
+                    <a href="blog.html" class="navigation__link">Blog</a></li>
+                <li class="navigation__item">
+                    <a href="contact.html" class="navigation__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header header--products">
         <ul class="header__menu">
             <li>
@@ -49,58 +70,65 @@
         </div>
         <div class="header__overlay"></div>
     </header>
-    <section class="section-stories">
-        <div class="bg-video">
-            <video class="bg-video__content" autoplay muted loop>
-                <source src="img/video.mp4" type="video/mp4">
-                <source src="img/video.webm" type="video/webm"> Your browser is not supported!
-            </video>
-        </div>
+    <main>
+        <section class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm"> Your browser is not supported!
+                </video>
+            </div>
 
-        <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">
-                We make people genuinely happy
-            </h2>
-        </div>
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    We make people genuinely happy
+                </h2>
+            </div>
 
-        <div class="row">
-            <div class="story">
-                <figure class="story__shape">
-                    <img src="img/salt.jpg" alt="Person on a tour" class="story__img">
-                    <figcaption class="story__caption">Mary Smith</figcaption>
-                </figure>
-                <div class="story__text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                        ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat
-                        quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                    </p>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/salt.jpg" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">Mary Smith</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
+                            libero repellat quis consequatur
+                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                            repellat
+                            quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="story">
-                <figure class="story__shape">
-                    <img src="img/salt.jpg" alt="Person on a tour" class="story__img">
-                    <figcaption class="story__caption">Jack Wilson</figcaption>
-                </figure>
-                <div class="story__text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                        ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat
-                        quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                    </p>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/salt.jpg" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">Jack Wilson</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
+                            libero repellat quis consequatur
+                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                            repellat
+                            quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="u-center-text u-margin-top-huge">
-            <a href="#" class="btn-text">Read all stories &rarr;</a>
-        </div>
-    </section>
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn-text">Read all stories &rarr;</a>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="footer__logo-box">
             <picture class="footer__logo">
@@ -132,10 +160,13 @@
             </div>
             <div class="col-1-of-2">
                 <p class="footer__copyright">
-                    <a href="#" class="footer__link">CDI Distribution Grup</a> este o firma privata cu capital integral romanesc, care si-a inceput activitatea
+                    <a href="#" class="footer__link">CDI Distribution Grup</a> este o firma privata cu capital integral
+                    romanesc, care si-a inceput activitatea
                     in 2004. A urmat o evolutie ascendenta
-                    <a href="#" class="footer__link">in topul firmelor private de distributie</a> din Romania. Ne-am remarcat in primul rand prin preturi
-                    competitive, servicii de calitate, flexibilitate in comunicarea cu clientii promptitudine si comunicare
+                    <a href="#" class="footer__link">in topul firmelor private de distributie</a> din Romania. Ne-am
+                    remarcat in primul rand prin preturi
+                    competitive, servicii de calitate, flexibilitate in comunicarea cu clientii promptitudine si
+                    comunicare
                     24/24 oricand si oriunde pe orice distanta.
                 </p>
             </div>
