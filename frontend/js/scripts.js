@@ -5,6 +5,7 @@ const slider = () => {
     backImg[1] = "https://media.gettyimages.com/photos/salt-mining-in-salar-de-uyuni-picture-id118365447?k=6&m=118365447&s=612x612&w=0&h=B-UWxQXvElrWeE2Jhdlo-zknMPNKmJ3FCL0apeEM3c0=";
     backImg[2] = "https://media.gettyimages.com/photos/excavator-at-work-in-a-salt-mine-picture-id97659971?k=6&m=97659971&s=612x612&w=0&h=tIMJECJ6EO-5PD2bHHFr_P18yKeLrqAfdCFl7wR1EWw=";
 
+   
     let i = 0;
     let x = (backImg.length) - 1;
     let int = 8000;
@@ -13,7 +14,7 @@ const slider = () => {
     const showNext = () => {
         elements.slider.classList.remove('active');
         elements.btn.animated.classList.remove('btn--animated');
-        (i >= x) ? i = 0: i++;
+        (i >= x) ? i = 0 : i++;
         changeImg(i);
         elements.count.innerText = ("0" + (i + 1)).slice(-2);
     };
@@ -27,7 +28,8 @@ const slider = () => {
             right: document.querySelector('.controls__arrow--next'),
             animated: document.querySelector('.btn--animated')
         },
-        count: document.querySelector('.count-slider__current')
+        count: document.querySelector('.count-slider__current'),
+        textBox: document.querySelectorAll('.header__text-box')
     }
 
     const startInterval = () => {
@@ -55,6 +57,11 @@ const slider = () => {
             }
         }, 60);
         elements.slider.style.backgroundImage = 'url(' + backImg[i] + ')';
+        arrTextBox = [...elements.textBox];
+        arrTextBox.forEach(elem => {
+            elem.classList.remove('active');
+        });
+        arrTextBox[i].classList.add('active');
     }
 
     const initialize = (() => {

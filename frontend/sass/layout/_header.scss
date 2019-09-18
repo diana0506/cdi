@@ -175,6 +175,13 @@
         transform: translate(-50%, -50%);
         text-align: right;
         z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
 
         @include respond(phone) {
             width: 100%;
