@@ -81,63 +81,71 @@
                     Produse
                 </h2>
             </div>
+            <ul class="list-categories">
+                <li>
+                    <a data-filter="*">Toate produsele</a>
+                </li>
+                <li><a data-filter="sare-dedurizare-apa">sare dedurizare apa</a></li>
+                <li><a data-filter="sare-intretinere-piscine">sare intretinere piscine</a></li>
+                <li><a data-filter="produse-dezapezire">produse deszapezire</a></li>
+            </ul>
             <div class="row">
                 <div class="gallery">
-                    <a href="single-product.html" class="gallery__item gallery__item--1">
+                    <a href="single-product.html" class="gallery__item gallery__item--1 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
                         <img src="img/products/prod-1.jpg" alt="Gallery image 1" class="gallery__img">
                     </a>
-                    <a href="single-product.html" class="gallery__item gallery__item--2">
+                    <a href="single-product.html" class="gallery__item gallery__item--2 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
                         <img src="img/products/prod-2.jpg" alt="Gallery image 2" class="gallery__img">
                     </a>
-                    <a href="single-product.html" class="gallery__item gallery__item--3">
+                    <a href="single-product.html" class="gallery__item gallery__item--3 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
                         <img src="img/products/prod-4.jpg" alt="Gallery image 3" class="gallery__img">
                     </a>
-                    <a href="single-product.html" class="gallery__item gallery__item--4">
+                    <a href="single-product.html" class="gallery__item gallery__item--4 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
                         <img src="img/products/prod-4.1.jpg" alt="Gallery image 4" class="gallery__img">
                     </a>
-                    <a href="single-product.html" class="gallery__item gallery__item--5">
+                    <a href="single-product.html" class="gallery__item gallery__item--5 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
                         <img src="img/products/prod-9.jpg" alt="Gallery image 5" class="gallery__img">
                     </a>
-                    <a href="single-product.html" class="gallery__item gallery__item--6">
+                    <a href="single-product.html" class="gallery__item gallery__item--6 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
                         <img src="img/products/prod-4.jpg" alt="Gallery image 6" class="gallery__img">
                     </a>
-                    <a href="single-product.html" class="gallery__item gallery__item--7">
+                    <a href="single-product.html" class="gallery__item gallery__item--7 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
                         <img src="img/products/prod-5.1.jpg" alt="Gallery image 7" class="gallery__img">
                     </a>
-                    <a href="single-product.html" class="gallery__item gallery__item--8">
+                    <a href="single-product.html" class="gallery__item gallery__item--8 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
                         <img src="img/products/prod-6.jpg" alt="Gallery image 8" class="gallery__img">
                     </a>
-                    <a href="single-product.html" class="gallery__item gallery__item--9">
+                    <a href="single-product.html" class="gallery__item gallery__item--9 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
                         <img src="img/products/prod-7.jpg" alt="Gallery image 9" class="gallery__img">
                     </a>
-                    <a href="single-product.html" class="gallery__item gallery__item--10">
+                    <a href="single-product.html" class="gallery__item gallery__item--10 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Tablete sare</h3>
                         </div>
@@ -185,6 +193,36 @@
             </div>
         </div>
     </footer>
+    <script>
+        // product filter
+
+
+        const setActiveProducts = (param) => {
+            const productItems = document.querySelectorAll('.gallery__item');
+            arrProductItems = [...productItems];
+            arrProductItems.forEach(element => {
+                element.classList.remove('active');
+            });
+            arrProductItems.map((elem) => {
+                if (elem.classList.contains(param) || param == '*') {
+                    elem.classList.add('active');
+                }
+            })
+        }
+
+        const categoryListItems = document.querySelectorAll('.list-categories li a');
+        arrListItems = [...categoryListItems];
+
+        arrListItems.map((elem) => {
+            elem.addEventListener('click', function() {
+                arrListItems.forEach(element => {
+                    element.classList.remove('active');
+                });
+                this.classList.add('active');
+                setActiveProducts(this.dataset.filter);
+            })
+        });
+    </script>
 </body>
 
 </html>
