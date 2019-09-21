@@ -146,6 +146,26 @@
             grid-row: 16 / span 5;
             grid-column: 10 / span 3;
         }
+        &--11 {
+            grid-row: 21 / span 5;
+            grid-column: 1 / span 3;
+        }
+        &--12 {
+            grid-row: 21 / span 5;
+            grid-column: 4 / span 3;
+        }
+        &--13 {
+            grid-row: 26 / span 5;
+            grid-column: 1 / span 3;
+        }
+        &--14 {
+            grid-row: 26 / span 5;
+            grid-column: 4 / span 3;
+        }
+        &--15 {
+            grid-row: 21 / span 10;
+            grid-column: 7 / span 6;
+        }
         .overlay {
                position: absolute;
                width: 100%;
