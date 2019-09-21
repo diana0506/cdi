@@ -1,0 +1,8 @@
+.page {
+    .composition {
+        margin-top : 20rem;
+        @include respond(phone) {
+            margin:  0;
+        }
+    }
+}

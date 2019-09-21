@@ -4,6 +4,13 @@
     margin-left: -20rem;
     display: flex;
 
+    &__img {
+        margin-right: 1.6rem;
+        img {
+            width: 55rem;
+        }
+    }
+
     &__specs {
         flex: 1 1 auto;
         display: flex;
@@ -31,6 +38,10 @@
             list-style: none;
             padding: 0;
             margin: 0;
+        }
+
+        &.single-card {
+            width: 100%;
         }
 
         @include respond(phone) {

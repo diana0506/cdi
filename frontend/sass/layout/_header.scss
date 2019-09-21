@@ -171,7 +171,8 @@
     &__text-box {
         position: absolute;
         top: 50%;
-        left: 60%;
+        left: 64%;
+        width: 60%;
         transform: translate(-50%, -50%);
         text-align: right;
         z-index: 2;
@@ -181,6 +182,18 @@
         &.active {
             opacity: 1;
             visibility: visible;
+        }
+
+        h1 {
+            width: 100%;
+            span.heading-primary--main {
+                font-size: 2.8rem;
+            }
+
+            .heading-primary {
+                margin-bottom: 2rem;
+
+            }
         }
 
         @include respond(phone) {
