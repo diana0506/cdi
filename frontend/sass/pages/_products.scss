@@ -79,9 +79,11 @@
             margin: .8rem .8rem;
             width: calc(33.33% - 1.6rem);
             order: 2;
+            width: 0;
 
             &.active {
                 order: 1;
+                width: calc(33.33% - 1.6rem);
             }
         }
     }
