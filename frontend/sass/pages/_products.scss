@@ -1,7 +1,65 @@
 .section-products {
     padding: 25rem 0;
     margin-top: -20vh;
-    background-color: $color-grey-light-1;    
+    background-color: $color-grey-light-1;
+    .list-categories {
+        list-style: none;
+        padding: 0 1.6rem;
+        margin: 0 0 1.6rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            flex: 1;
+            text-align: center;
+
+            
+
+            a {
+                font-size: 1.8rem;
+            
+                &.active {
+                    color: $color-yellow;
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .categories-description {
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.6rem;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 1.6rem 0;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+
+        ul {
+            margin: .8rem 0 .8rem 4rem;
+            li {
+                font-size: 1.6rem;
+            }
+        }
+
+        .content {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
 }
 
 .gallery {
@@ -12,9 +70,33 @@
     grid-gap: .1rem;
     padding: 1.5rem;
 
+    &.filtered {
+        display: flex;
+        margin: 0 -1.6rem;
+        flex-wrap: wrap;
+
+        .gallery__item {
+            margin: .8rem .8rem;
+            width: calc(33.33% - 1.6rem);
+            order: 2;
+
+            &.active {
+                order: 1;
+            }
+        }
+    }
+
     &__item {
         position: relative;
         overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: 280ms all;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
         &--1 {
             grid-row: 1 / span 5;
             grid-column: 1 / span 3;
@@ -64,6 +146,26 @@
             grid-row: 16 / span 5;
             grid-column: 10 / span 3;
         }
+        &--11 {
+            grid-row: 21 / span 5;
+            grid-column: 1 / span 3;
+        }
+        &--12 {
+            grid-row: 21 / span 5;
+            grid-column: 4 / span 3;
+        }
+        &--13 {
+            grid-row: 26 / span 5;
+            grid-column: 1 / span 3;
+        }
+        &--14 {
+            grid-row: 26 / span 5;
+            grid-column: 4 / span 3;
+        }
+        &--15 {
+            grid-row: 21 / span 10;
+            grid-column: 7 / span 6;
+        }
         .overlay {
                position: absolute;
                width: 100%;
@@ -78,7 +180,9 @@
 
                .product-title {
                     transition: all 280ms;
-                    opacity: 0;                    
+                    opacity: 0;
+                    text-align: center;
+                    padding: 0 4rem;                 
                }
         }
         &:hover {
@@ -122,6 +226,7 @@
                     visibility: visible;
                     margin-top: 4rem;
                     font-size: 2.8rem;
+                    
                 }
             }
         }
