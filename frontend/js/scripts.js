@@ -1,9 +1,12 @@
 const slider = () => {
 
     const backImg = [];
-    backImg[0] = "https://media.gettyimages.com/photos/salt-pond-picture-id175603484?k=6&m=175603484&s=612x612&w=0&h=H0cBJ6uM1ytpmOCtuXTdas5bkcHETSJGDWrH7Vu-fLI=";
-    backImg[1] = "https://media.gettyimages.com/photos/salt-mining-in-salar-de-uyuni-picture-id118365447?k=6&m=118365447&s=612x612&w=0&h=B-UWxQXvElrWeE2Jhdlo-zknMPNKmJ3FCL0apeEM3c0=";
-    backImg[2] = "https://media.gettyimages.com/photos/excavator-at-work-in-a-salt-mine-picture-id97659971?k=6&m=97659971&s=612x612&w=0&h=tIMJECJ6EO-5PD2bHHFr_P18yKeLrqAfdCFl7wR1EWw=";
+    // backImg[0] = "https://media.gettyimages.com/photos/salt-pond-picture-id175603484?k=6&m=175603484&s=612x612&w=0&h=H0cBJ6uM1ytpmOCtuXTdas5bkcHETSJGDWrH7Vu-fLI=";
+    // backImg[1] = "https://media.gettyimages.com/photos/salt-mining-in-salar-de-uyuni-picture-id118365447?k=6&m=118365447&s=612x612&w=0&h=B-UWxQXvElrWeE2Jhdlo-zknMPNKmJ3FCL0apeEM3c0=";
+    // backImg[2] = "https://media.gettyimages.com/photos/excavator-at-work-in-a-salt-mine-picture-id97659971?k=6&m=97659971&s=612x612&w=0&h=tIMJECJ6EO-5PD2bHHFr_P18yKeLrqAfdCFl7wR1EWw=";
+    backImg[0] = "img/slider/slider-1.jpg";
+    backImg[1] = "img/slider/slider-2.jpg";
+    backImg[2] = "img/slider/slider-3.jpg";
 
 
     let i = 0;

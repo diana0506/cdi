@@ -297,6 +297,13 @@
                     font-size: 2.8rem;
                     padding: 1rem;
                     color: $color-primary-dark;
+                    .fa-facebook {
+                        color: #3A5998;
+                    }
+
+                    .fa-whatsapp {
+                        color: #24D366;
+                    }
                 }
 
                 @include respond(phone) {
@@ -307,6 +314,8 @@
 
                     a {
                         color: $color-grey-light-2;
+
+                        
                     }
                 }
             }
@@ -374,6 +383,10 @@
                         padding: 0;
                         position: absolute;
                         flex-direction: column;
+                        height: 18rem;
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: $color-grey-light-2;
                     }
                 }
             }
