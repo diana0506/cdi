@@ -34,51 +34,101 @@
                         <div id="CybotCookiebotDialogBodyLevelButtonsRow">
                             <div id="CybotCookiebotDialogBodyLevelButtonsSelectPane">
                                 <div class="CybotCookiebotDialogBodyLevelButtonWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked"><label for="CybotCookiebotDialogBodyLevelButtonNecessary">Necesare</label></div>
-                                <div
-                                    class="CybotCookiebotDialogBodyLevelButtonWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0">
+                                <div class="CybotCookiebotDialogBodyLevelButtonWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0">
                                     <label for="CybotCookiebotDialogBodyLevelButtonPreferences">Preferinţe</label>
+                                </div>
+                                <div class="CybotCookiebotDialogBodyLevelButtonWrapper">
+                                    <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"><label for="CybotCookiebotDialogBodyLevelButtonStatistics">Statistici</label>
+                                </div>
+                                <div class="CybotCookiebotDialogBodyLevelButtonWrapper">
+                                    <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"><label for="CybotCookiebotDialogBodyLevelButtonMarketing">Marketing</label></div>
                             </div>
-                            <div class="CybotCookiebotDialogBodyLevelButtonWrapper">
-                                <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"><label for="CybotCookiebotDialogBodyLevelButtonStatistics">Statistici</label>
-                            </div>
-                            <div class="CybotCookiebotDialogBodyLevelButtonWrapper">
-                                <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"><label for="CybotCookiebotDialogBodyLevelButtonMarketing">Marketing</label></div>
+                            <div id="CybotCookiebotDialogBodyLevelDetailsWrapper"><a id="CybotCookiebotDialogBodyLevelDetailsButton" class="CybotCookiebotDialogBodyLink" href="javascript: void(0);" tabindex="0" lang="ro"> Afişare </a></div>
                         </div>
-                        <div id="CybotCookiebotDialogBodyLevelDetailsWrapper"><a id="CybotCookiebotDialogBodyLevelDetailsButton" class="CybotCookiebotDialogBodyLink" href="javascript: void(0);" tabindex="0" lang="ro"> Afişare </a></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="CybotCookiebotDialogDetail">
-        <div id="CybotCookiebotDialogDetailBody">
-            <div id="CybotCookiebotDialogDetailBodyContentTabs">
-                <a id="CybotCookiebotDialogDetailBodyContentTabsOverview" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItemSelected" href="javascript: CookieConsent.dialog.showDetailPane('overview');" lang="ro"> Declaraţie cookie-uri </a>
-                <a
-                    id="CybotCookiebotDialogDetailBodyContentTabsIAB" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItem" href="javascript: CookieConsent.dialog.showDetailPane('iab');" lang="ro"> [#IABSETTINGS#] </a><a id="CybotCookiebotDialogDetailBodyContentTabsAbout" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItem" href="javascript: CookieConsent.dialog.showDetailPane('about');"
-                        lang="ro"> Despre cookie-uri </a>
-            </div>
-            <div id="CybotCookiebotDialogDetailBodyContent">
-                <div id="CybotCookiebotDialogDetailBodyContentTextOverview" lang="ro">
-                    <div id="CybotCookiebotDialogDetailBodyContentCookieContainer">
-                        <div id="CybotCookiebotDialogDetailBodyContentCookieContainerTypes">
-                            <a id="CybotCookiebotDialogDetailBodyContentCookieContainerNecessary" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('necessary');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected" lang="ro">
-                                <label>&nbsp;</label>Necesare (2)</a>
-                            <a id="CybotCookiebotDialogDetailBodyContentCookieContainerPreference" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('preference');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="ro"><label>&nbsp;</label>Preferinţe (0)
+        <div id="CybotCookiebotDialogDetail">
+            <div id="CybotCookiebotDialogDetailBody">
+                <div id="CybotCookiebotDialogDetailBodyContentTabs">
+                    <a id="CybotCookiebotDialogDetailBodyContentTabsOverview" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItemSelected" href="javascript: CookieConsent.dialog.showDetailPane('overview');" lang="ro"> Declaraţie cookie-uri </a>
+                    <a id="CybotCookiebotDialogDetailBodyContentTabsIAB" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItem" href="javascript: CookieConsent.dialog.showDetailPane('iab');" lang="ro"> [#IABSETTINGS#] </a>
+                    <a
+                        id="CybotCookiebotDialogDetailBodyContentTabsAbout" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItem" href="javascript: CookieConsent.dialog.showDetailPane('about');" lang="ro"> Despre cookie-uri </a>
+                </div>
+                <div id="CybotCookiebotDialogDetailBodyContent">
+                    <div id="CybotCookiebotDialogDetailBodyContentTextOverview" lang="ro">
+                        <div id="CybotCookiebotDialogDetailBodyContentCookieContainer">
+                            <div id="CybotCookiebotDialogDetailBodyContentCookieContainerTypes">
+                                <a id="CybotCookiebotDialogDetailBodyContentCookieContainerNecessary" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('necessary');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected" lang="ro">
+                                    <label>&nbsp;</label>Necesare (2)</a>
+                                <a id="CybotCookiebotDialogDetailBodyContentCookieContainerPreference" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('preference');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="ro"><label>&nbsp;</label>Preferinţe (0)
                                 </a>
-                            <a id="CybotCookiebotDialogDetailBodyContentCookieContainerStatistics" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('statistics');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="ro"><label>&nbsp;</label>Statistici (5)
+                                <a id="CybotCookiebotDialogDetailBodyContentCookieContainerStatistics" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('statistics');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="ro"><label>&nbsp;</label>Statistici (5)
                                 </a>
-                            <a id="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('advertising');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="ro"><label>&nbsp;</label>Marketing (13)
+                                <a id="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('advertising');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="ro"><label>&nbsp;</label>Marketing (13)
                                 </a>
-                            <a id="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('unclassified');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="ro"><label>&nbsp;</label>Neclasificate (14)
+                                <a id="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('unclassified');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="ro"><label>&nbsp;</label>Neclasificate (14)
                                 </a>
-                        </div>
-                        <div id="CybotCookiebotDialogDetailBodyContentCookieContainerTypeDetails">
-                            <div id="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary">
-                                <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile necesare ajută la a face un site utilizabil prin activarea funcţiilor de bază, precum navigarea în pagină şi accesul la zonele securizate de pe site. Site-ul nu poate funcţiona corespunzător fără aceste cookie-uri.</div>
-                                <div
-                                    class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
-                                    <table id="CybotCookiebotDialogDetailTableNecessary" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
+                            </div>
+                            <div id="CybotCookiebotDialogDetailBodyContentCookieContainerTypeDetails">
+                                <div id="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary">
+                                    <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile necesare ajută la a face un site utilizabil prin activarea funcţiilor de bază, precum navigarea în pagină şi accesul la zonele securizate de pe site. Site-ul nu poate funcţiona corespunzător fără aceste
+                                        cookie-uri.</div>
+                                    <div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
+                                        <table id="CybotCookiebotDialogDetailTableNecessary" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Denumire</th>
+                                                    <th scope="col">Furnizor</th>
+                                                    <th scope="col">Scop</th>
+                                                    <th scope="col">Expirare</th>
+                                                    <th scope="col">Tip</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td title="CookieConsent">CookieConsent</td>
+                                                    <td title="cdigroup.ro">cdigroup.ro</td>
+                                                    <td title="Stores the user's cookie consent state for the current domain">Stores the user's cookie consent state for the current domain
+
+                                                    </td>
+                                                    <td title="1 an">1 an</td>
+                                                    <td title="HTTP">HTTP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td title="XSRF-TOKEN">XSRF-TOKEN</td>
+                                                    <td title="cdigroup.ro">cdigroup.ro</td>
+                                                    <td title="Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.    ">Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.
+
+                                                    </td>
+                                                    <td title="1 zi">1 zi</td>
+                                                    <td title="HTTP">HTTP</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="CybotCookiebotDialogDetailBodyContentCookieTabsPreference">
+                                    <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile de preferinţă permit unui site să îşi amintească informaţii care se modifică după modul în care se comportă sau arată site-ul, precum limba dvs. preferată sau regiunea în care vă aflaţi.
+
+                                    </div div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
+                                    <table id="CybotCookiebotDialogDetailTablePreference" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
+                                        <tbody>
+                                            <tr>
+                                                <td class="CybotCookiebotDialogDetailBodyContentCookieTypeTableEmpty">Noi nu utilizăm cookie-uri de acest tip</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics">
+                                <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile de statistică îi ajută pe proprietarii unui site să înţeleagă modul în care vizitatorii interacţionează cu site-urile prin colectarea şi raportarea informaţiilor în mod anonim.
+
+                                </div>
+                                <div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
+                                    <table id="CybotCookiebotDialogDetailTableStatistics" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
                                         <thead>
                                             <tr>
                                                 <th scope="col">Denumire</th>
@@ -90,348 +140,297 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td title="CookieConsent">CookieConsent</td>
+                                                <td title="_ga">_ga</td>
                                                 <td title="cdigroup.ro">cdigroup.ro</td>
-                                                <td title="Stores the user's cookie consent state for the current domain">Stores the user's cookie consent state for the current domain
-
-                                                </td>
-                                                <td title="1 an">1 an</td>
+                                                <td title="Registers a unique ID that is used to generate statistical data on how the visitor uses the website.">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td>
+                                                <td title="2 ani">2 ani</td>
                                                 <td title="HTTP">HTTP</td>
                                             </tr>
                                             <tr>
-                                                <td title="XSRF-TOKEN">XSRF-TOKEN</td>
-                                                <td title="cdigroup.ro">cdigroup.ro</td>
-                                                <td title="Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.    ">Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.
+                                                <td title="_gat">_gat</td>
+                                                <td title="cdigroup.ro">gaviotasimbac.ro</td>
+                                                <td title="Used by Google Analytics to throttle request rate">Used by Google Analytics to throttle request rate</td>
+                                                <td title="1 zi">1 zi</td>
+                                                <td title="HTTP">HTTP</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="_gid">_gid</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="Registers a unique ID that is used to generate statistical data on how the visitor uses the website.">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td>
+                                                <td title="1 zi">1 zi</td>
+                                                <td title="HTTP">HTTP</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="fonts">fonts</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="Keeps track of special fonts used on the website for internal analysis. The cookie does not register any visitor data. ">Keeps track of special fonts used on the website for internal analysis. The cookie does not register any visitor data. </td>
+                                                <td title="Session">Session</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="collect">collect</td>
+                                                <td title="google-analytics.com">google-analytics.com</td>
+                                                <td title="Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.">Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.</td>
+                                                <td title="Session">Session</td>
+                                                <td title="Pixel">Pixel</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising">
+                                <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile de marketing sunt utilizate pentru a-i urmări pe utilizatori de la un site la altul. Intenţia este de a afişa anunţuri relevante şi antrenante pentru utilizatorii individuali, aşadar ele sunt mai valoroase
+                                    pentru agenţiile de puiblicitate şi părţile terţe care se ocupă de publicitate.
+
+                                </div>
+                                <div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
+                                    <table id="CybotCookiebotDialogDetailTableAdvertising" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Denumire</th>
+                                                <th scope="col">Furnizor</th>
+                                                <th scope="col">Scop</th>
+                                                <th scope="col">Expirare</th>
+                                                <th scope="col">Tip</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td title="IDE">IDE</td>
+                                                <td title="doubleclick.net">doubleclick.net</td>
+                                                <td title="Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.">Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted
+                                                    ads to the user.</td>
+                                                <td title="1 an">1 an</td>
+                                                <td title="HTTP">HTTP
 
                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td title="test_cookie">test_cookie</td>
+                                                <td title="doubleclick.net">doubleclick.net</td>
+                                                <td title="Used to check if the user's browser supports cookies.">Used to check if the user's browser supports cookies.</td>
+                                                <td title="1 zi">1 zi
+
+                                                </td>
+                                                <td title="HTTP">HTTP</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="NID">NID</td>
+                                                <td title="google.com">google.com</td>
+                                                <td title="Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.">Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.</td>
+                                                <td title="6 luni">6 luni</td>
+                                                <td title="HTTP">HTTP</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="GPS">GPS</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Registers a unique ID on mobile devices to enable tracking based on geographical GPS location.">Registers a unique ID on mobile devices to enable tracking based on geographical GPS location.</td>
+                                                <td title="1 zi">1 zi</td>
+                                                <td title="HTTP">HTTP</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="PREF">PREF</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Registers a unique ID that is used by Google to keep statistics of how the visitor uses YouTube videos across different websites.">Registers a unique ID that is used by Google to keep statistics of how the visitor uses YouTube videos across different websites.</td>
+                                                <td title="8 luni">8 luni</td>
+                                                <td title="HTTP">HTTP</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="VISITOR_INFO1_LIVE">VISITOR_INFO1_LIVE</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Tries to estimate the users' bandwidth on pages with integrated YouTube videos.">Tries to estimate the users' bandwidth on pages with integrated YouTube videos.</td>
+                                                <td title="179 zile">179 zile</td>
+                                                <td title="HTTP">HTTP</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="YSC">YSC</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Registers a unique ID to keep statistics of what videos from YouTube the user has seen.">Registers a unique ID to keep statistics of what videos from YouTube the user has seen.</td>
+                                                <td title="Session">Session</td>
+                                                <td title="HTTP">HTTP</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td title="yt-remote-cast-installed">yt-remote-cast-installed</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
+                                                <td title="Session">Session</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="yt-remote-connected-devices">yt-remote-connected-devices</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="yt-remote-device-id">yt-remote-device-id</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="yt-remote-fast-check-period">yt-remote-fast-check-period</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
+                                                <td title="Session">Session</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="yt-remote-session-app">yt-remote-session-app</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
+                                                <td title="Session">Session</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="yt-remote-session-name">yt-remote-session-name</td>
+                                                <td title="youtube.com">youtube.com</td>
+                                                <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
+                                                <td title="Session">Session</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified">
+                                <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile neclasificate sunt cookie-uri în curs de clasificare, împreună cu furnizorii de cookie-uri individuale. </div>
+                                <div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
+                                    <table id="CybotCookiebotDialogDetailTableUnclassified" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Denumire</th>
+                                                <th scope="col">Furnizor</th>
+                                                <th scope="col">Scop</th>
+                                                <th scope="col">Expirare</th>
+                                                <th scope="col">Tip</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td title="gaviota_simbac_session">gaviota_simbac_session</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="1 zi">1 zi</td>
+                                                <td title="HTTP">HTTP</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="t3D">t3D</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tADe">tADe</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tADu">tADu</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tAE">tAE</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tC">tC</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tMQ">tMQ</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tnsApp">tnsApp</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tPL">tPL</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tTDe">tTDe</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tTDu">tTDu</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tTE">tTE</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="tTf">tTf</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
+                                                <td title="Persistent">Persistent</td>
+                                                <td title="HTML">HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td title="UUID#[abcdef0123456789]{40}">UUID#[abcdef0123456789]{40}</td>
+                                                <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
+                                                <td title="În așteptare">În așteptare</td>
                                                 <td title="1 zi">1 zi</td>
                                                 <td title="HTTP">HTTP</td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                </div>
                             </div>
-                        </div>
-                        <div id="CybotCookiebotDialogDetailBodyContentCookieTabsPreference">
-                            <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile de preferinţă permit unui site să îşi amintească informaţii care se modifică după modul în care se comportă sau arată site-ul, precum limba dvs. preferată sau regiunea în care vă aflaţi.
-
-                            </div div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
-                            <table id="CybotCookiebotDialogDetailTablePreference" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
-                                <tbody>
-                                    <tr>
-                                        <td class="CybotCookiebotDialogDetailBodyContentCookieTypeTableEmpty">Noi nu utilizăm cookie-uri de acest tip</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics">
-                        <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile de statistică îi ajută pe proprietarii unui site să înţeleagă modul în care vizitatorii interacţionează cu site-urile prin colectarea şi raportarea informaţiilor în mod anonim.
-
-                        </div>
-                        <div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
-                            <table id="CybotCookiebotDialogDetailTableStatistics" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Denumire</th>
-                                        <th scope="col">Furnizor</th>
-                                        <th scope="col">Scop</th>
-                                        <th scope="col">Expirare</th>
-                                        <th scope="col">Tip</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td title="_ga">_ga</td>
-                                        <td title="cdigroup.ro">cdigroup.ro</td>
-                                        <td title="Registers a unique ID that is used to generate statistical data on how the visitor uses the website.">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td>
-                                        <td title="2 ani">2 ani</td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="_gat">_gat</td>
-                                        <td title="cdigroup.ro">gaviotasimbac.ro</td>
-                                        <td title="Used by Google Analytics to throttle request rate">Used by Google Analytics to throttle request rate</td>
-                                        <td title="1 zi">1 zi</td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="_gid">_gid</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="Registers a unique ID that is used to generate statistical data on how the visitor uses the website.">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td>
-                                        <td title="1 zi">1 zi</td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="fonts">fonts</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="Keeps track of special fonts used on the website for internal analysis. The cookie does not register any visitor data. ">Keeps track of special fonts used on the website for internal analysis. The cookie does not register any visitor data. </td>
-                                        <td title="Session">Session</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="collect">collect</td>
-                                        <td title="google-analytics.com">google-analytics.com</td>
-                                        <td title="Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.">Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.</td>
-                                        <td title="Session">Session</td>
-                                        <td title="Pixel">Pixel</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising">
-                        <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile de marketing sunt utilizate pentru a-i urmări pe utilizatori de la un site la altul. Intenţia este de a afişa anunţuri relevante şi antrenante pentru utilizatorii individuali, aşadar ele sunt mai valoroase pentru agenţiile
-                            de puiblicitate şi părţile terţe care se ocupă de publicitate.
-
-                        </div>
-                        <div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
-                            <table id="CybotCookiebotDialogDetailTableAdvertising" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Denumire</th>
-                                        <th scope="col">Furnizor</th>
-                                        <th scope="col">Scop</th>
-                                        <th scope="col">Expirare</th>
-                                        <th scope="col">Tip</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td title="IDE">IDE</td>
-                                        <td title="doubleclick.net">doubleclick.net</td>
-                                        <td title="Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.">Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads
-                                            to the user.</td>
-                                        <td title="1 an">1 an</td>
-                                        <td title="HTTP">HTTP
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td title="test_cookie">test_cookie</td>
-                                        <td title="doubleclick.net">doubleclick.net</td>
-                                        <td title="Used to check if the user's browser supports cookies.">Used to check if the user's browser supports cookies.</td>
-                                        <td title="1 zi">1 zi
-
-                                        </td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="NID">NID</td>
-                                        <td title="google.com">google.com</td>
-                                        <td title="Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.">Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.</td>
-                                        <td title="6 luni">6 luni</td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="GPS">GPS</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Registers a unique ID on mobile devices to enable tracking based on geographical GPS location.">Registers a unique ID on mobile devices to enable tracking based on geographical GPS location.</td>
-                                        <td title="1 zi">1 zi</td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="PREF">PREF</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Registers a unique ID that is used by Google to keep statistics of how the visitor uses YouTube videos across different websites.">Registers a unique ID that is used by Google to keep statistics of how the visitor uses YouTube videos across different websites.</td>
-                                        <td title="8 luni">8 luni</td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="VISITOR_INFO1_LIVE">VISITOR_INFO1_LIVE</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Tries to estimate the users' bandwidth on pages with integrated YouTube videos.">Tries to estimate the users' bandwidth on pages with integrated YouTube videos.</td>
-                                        <td title="179 zile">179 zile</td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="YSC">YSC</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Registers a unique ID to keep statistics of what videos from YouTube the user has seen.">Registers a unique ID to keep statistics of what videos from YouTube the user has seen.</td>
-                                        <td title="Session">Session</td>
-                                        <td title="HTTP">HTTP</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td title="yt-remote-cast-installed">yt-remote-cast-installed</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
-                                        <td title="Session">Session</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="yt-remote-connected-devices">yt-remote-connected-devices</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="yt-remote-device-id">yt-remote-device-id</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="yt-remote-fast-check-period">yt-remote-fast-check-period</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
-                                        <td title="Session">Session</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="yt-remote-session-app">yt-remote-session-app</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
-                                        <td title="Session">Session</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="yt-remote-session-name">yt-remote-session-name</td>
-                                        <td title="youtube.com">youtube.com</td>
-                                        <td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td>
-                                        <td title="Session">Session</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified">
-                        <div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Cookie-urile neclasificate sunt cookie-uri în curs de clasificare, împreună cu furnizorii de cookie-uri individuale. </div>
-                        <div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer">
-                            <table id="CybotCookiebotDialogDetailTableUnclassified" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Denumire</th>
-                                        <th scope="col">Furnizor</th>
-                                        <th scope="col">Scop</th>
-                                        <th scope="col">Expirare</th>
-                                        <th scope="col">Tip</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td title="gaviota_simbac_session">gaviota_simbac_session</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="1 zi">1 zi</td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="t3D">t3D</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tADe">tADe</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tADu">tADu</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tAE">tAE</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tC">tC</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tMQ">tMQ</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tnsApp">tnsApp</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tPL">tPL</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tTDe">tTDe</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tTDu">tTDu</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tTE">tTE</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="tTf">tTf</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="Persistent">Persistent</td>
-                                        <td title="HTML">HTML</td>
-                                    </tr>
-                                    <tr>
-                                        <td title="UUID#[abcdef0123456789]{40}">UUID#[abcdef0123456789]{40}</td>
-                                        <td title="gaviotasimbac.ro">gaviotasimbac.ro</td>
-                                        <td title="În așteptare">În așteptare</td>
-                                        <td title="1 zi">1 zi</td>
-                                        <td title="HTTP">HTTP</td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>
+                <div id="CybotCookiebotDialogDetailBodyContentTextIAB" lang="ro"> [#COOKIESIABCONTENT#] </div>
+                <div id="CybotCookiebotDialogDetailBodyContentTextAbout" lang="ro"> Cookie-urile sunt mici fişiere de text ce pot fi utilizate de către site-urile web pentru a face utilizarea lor mai eficientă.
+                    <br>
+                    <br>Legea stipulează că putem stoca cookie-uri pe dispozitivul dvs., în cazul în care ele sunt strict necesare pentru operarea acestui site. Pentru toate celelalte tipuri de cookie-uri avem nevoie de permisiunea dvs.
+                    <br>
+                    <br>Acest site utilizează diferite tipuri de cookie-uri. Unele cookie-uri sunt plasate de către servicii părţi terţe care apar pe paginile noastre.
+                    <br>
+                    <br>Puteți, în orice moment, să modificați sau să vă retrageți acordul din Declarația privind modulele cookie de pe website-ul nostru.
+                    <br>
+                    <br>Aflați mai multe despre cine suntem, cum ne puteți contacta și cum procesăm datele personale în Politica noastră de confidențialitate.
+                </div>
+            </div>
+            <div id="CybotCookiebotDialogDetailFooter" lang="ro"> Declaraţie cookie-uri actualizată ultima oară în data de 09.09.2019 by
+                <a href="https://www.cookiebot.com" target="_blank" rel="noopener" title="Cookiebot - The EU Cookie Law Solution">Cookiebot</a>
             </div>
         </div>
-        <div id="CybotCookiebotDialogDetailBodyContentTextIAB" lang="ro"> [#COOKIESIABCONTENT#] </div>
-        <div id="CybotCookiebotDialogDetailBodyContentTextAbout" lang="ro"> Cookie-urile sunt mici fişiere de text ce pot fi utilizate de către site-urile web pentru a face utilizarea lor mai eficientă.
-            <br>
-            <br>Legea stipulează că putem stoca cookie-uri pe dispozitivul dvs., în cazul în care ele sunt strict necesare pentru operarea acestui site. Pentru toate celelalte tipuri de cookie-uri avem nevoie de permisiunea dvs.
-            <br>
-            <br>Acest site utilizează diferite tipuri de cookie-uri. Unele cookie-uri sunt plasate de către servicii părţi terţe care apar pe paginile noastre.
-            <br>
-            <br>Puteți, în orice moment, să modificați sau să vă retrageți acordul din Declarația privind modulele cookie de pe website-ul nostru.
-            <br>
-            <br>Aflați mai multe despre cine suntem, cum ne puteți contacta și cum procesăm datele personale în Politica noastră de confidențialitate.
-        </div>
-    </div>
-    <div id="CybotCookiebotDialogDetailFooter" lang="ro"> Declaraţie cookie-uri actualizată ultima oară în data de 09.09.2019 by
-        <a href="https://www.cookiebot.com" target="_blank" rel="noopener" title="Cookiebot - The EU Cookie Law Solution">Cookiebot</a>
-    </div>
-    </div>
     </div>
     </div>
 
