@@ -1,13 +1,24 @@
-.container-cookie {
+.cookie__container {
     position: fixed;
     bottom: 0;
     height: 10rem;
     background-color: $color-primary-dark;
 }
 
-.cookie-action {
+h2 {
+    padding-left: 2rem;
+}
+
+p {
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.cookie__action {
     display: inline-block;
-    padding: 0.1rem 0.4rem 0.3rem;
     z-index: 10;
     font-size: 1rem;
     font-weight: 400;

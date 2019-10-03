@@ -13,17 +13,20 @@
 </head>
 
 <body>
-    <div class="container-cookie">
-        <h2>
-            Acest site foloseste cookie-uri
-        </h2>
-        <div id="text-cookie" lang="ro">Folosim cookie-uri pentru a personaliza conținutul și anunțurile, pentru a oferi funcții de rețele sociale și pentru a analiza traficul. De asemenea, le oferim partenerilor de rețele sociale, de publicitate și de analize informații cu privire
-            la modul în care folosiți site-ul nostru. Aceștia le pot combina cu alte informații oferite de dvs. sau culese în urma folosirii serviciilor lor. În cazul în care alegeți să continuați să utilizați website-ul nostru, sunteți de acord cu utilizarea
-            modulelor noastre cookie.
+    <div class="cookie__container">
+        <div id="cookie__content">
+            <h2>
+                Acest site foloseste cookie-uri
+            </h2>
+            <p> Folosim cookie-uri pentru a personaliza conținutul și anunțurile, pentru a oferi funcții de rețele sociale și pentru a analiza traficul. De asemenea, le oferim partenerilor de rețele sociale, de publicitate și de analize informații cu privire
+                la modul în care folosiți site-ul nostru. Aceștia le pot combina cu alte informații oferite de dvs. sau culese în urma folosirii serviciilor lor. În cazul în care alegeți să continuați să utilizați website-ul nostru, sunteți de acord cu
+                utilizarea modulelor noastre cookie.
+            </p>
         </div>
-        <section class="cookie-action">
-            <button type="btn-primary" onclick="alert('Folosim cookie-uri pentru a personaliza conținutul și anunțurile, pentru a oferi funcții de rețele sociale și pentru a analiza traficul. De asemenea, le oferim partenerilor de rețele sociale, de publicitate și de analize informații cu privire la modul în care folosiți site-ul nostru. Aceștia le pot combina cu alte informații oferite de dvs. sau culese în urma folosirii serviciilor lor. În cazul în care alegeți să continuați să utilizați website-ul nostru, sunteți de acord cu utilizarea modulelor noastre cookie.')">Utilizare cookie-uri necesare!</button>
-            <button type="btn-secondary" onclick="alert('Folosim cookie-uri pentru a personaliza conținutul și anunțurile, pentru a oferi funcții de rețele sociale și pentru a analiza traficul. De asemenea, le oferim partenerilor de rețele sociale, de publicitate și de analize informații cu privire la modul în care folosiți site-ul nostru. Aceștia le pot combina cu alte informații oferite de dvs. sau culese în urma folosirii serviciilor lor. În cazul în care alegeți să continuați să utilizați website-ul nostru, sunteți de acord cu utilizarea modulelor noastre cookie.')">Permitere toate</button>
+        <section class="cookie__action">
+            <button type="cookie__btn--necessary">Utilizare cookie-uri necesare!</button>
+            <button type="cookie__btn--agree">Permitere toate</button>
+            <button type="cookie__btn--link">Afisaza</button>
         </section>
     </div>
 
@@ -32,11 +35,22 @@
 
 
 
-
-
-
-
-
 </body>
+
+<script>
+    const btns = document.querySelectorAll('.cookie__action button');
+    const btnArr = [...btns];
+
+    btnArr.forEach((btn) => {
+        btn.addEventListener('click', function() {
+            // console.log(this);
+            if (this.classList.contains('.cookie__btn--necessary')) {
+                console.log('fuck your self');
+
+            }
+        });
+
+    })
+</script>
 
 </html>
