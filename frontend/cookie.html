@@ -24,15 +24,11 @@
             </p>
         </div>
         <section class="cookie__action">
-            <button type="cookie__btn--necessary">Utilizare cookie-uri necesare!</button>
-            <button type="cookie__btn--agree">Permitere toate</button>
-            <button type="cookie__btn--link">Afisaza</button>
+            <button type="button" class="cookie__btn--necessary">Utilizare cookie-uri necesare!</button>
+            <button type="button" class="cookie__btn--agree">Permitere toate</button>
+            <button type="button" class="cookie__btn--link">Afisaza</button>
         </section>
     </div>
-
-
-
-
 
 
 </body>
@@ -43,14 +39,19 @@
 
     btnArr.forEach((btn) => {
         btn.addEventListener('click', function() {
-            // console.log(this);
-            if (this.classList.contains('.cookie__btn--necessary')) {
-                console.log('fuck your self');
-
-            }
+            console.log(this);
+            if (this.classList.contains('cookie__btn--necessary')) {
+                console.log('do something');
+            } else if (this.classList.contains('cookie__btn--agree')) {
+                console.log('ok');
+            } else(this.classList.contains('cookie__btn--link'))
+            console.log('working');
         });
 
     })
+
+    document.cookie = 'agree';
+    document.cookie = 'reject';
 </script>
 
 </html>
