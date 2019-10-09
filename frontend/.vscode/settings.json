@@ -1,2 +1,21 @@
 {
+    "window.zoomLevel": 1,
+    "git.autofetch": true,
+    "typescript.tsdk": "/usr/local/lib",
+    "liveSassCompile.settings.formats": [
+        {
+          "format": "compressed",
+          "extensionName": ".min.css",
+          "savePath": "css/"
+        }
+      ],
+      "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+      },
+      "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+      },
+      "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+      },
 }

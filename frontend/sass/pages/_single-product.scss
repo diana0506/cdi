@@ -8,6 +8,10 @@
 
     .u-margin-bottom-big {
         margin-left: 35rem;
+        @include respond(phone) {
+            margin: 0 0 2rem;
+            
+        }
     }
     .heading-secondary {
         padding: 0 4rem;
