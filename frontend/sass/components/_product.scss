@@ -19,6 +19,7 @@
         flex: 1 1 auto;
         display: flex;
         flex-wrap: wrap;
+        text-align: left;
 
         @include respond(phone) {
             flex-direction: column;
