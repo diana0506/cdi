@@ -84,10 +84,42 @@
 
         &--pharma {
             background-image: url('../img/pharma.png');background-size: cover;
+
+            @include respond(phone) {
+                background-image: url('../img/pharma-mobile.png');background-size: cover;
+            }
         }
 
         &--industrial {
             background-image: url('../img/industrial.png');background-size: cover;
+
+            @include respond(phone) {
+                background-image: url('../img/industrial-mobile.png');background-size: cover;
+            }
+        }
+
+        &--piscine {
+            background-image: url('../img/piscine.png');background-size: cover;
+
+            @include respond(phone) {
+                background-image: url('../img/psicine-mobile.png');background-size: cover;
+            }
+        }
+
+        &--uz-caznic {
+            background-image: url('../img/uz-casnic.png');background-size: cover;
+
+            @include respond(phone) {
+                background-image: url('../img/uz-caznic-mobile.png');background-size: cover;
+            }
+        }
+
+        &--dezapezire {
+            background-image: url('../img/dezapezire.png');background-size: cover;
+
+            @include respond(phone) {
+                background-image: url('../img/dezapezire-mobile.png');background-size: cover;
+            }
         }
     }
 
