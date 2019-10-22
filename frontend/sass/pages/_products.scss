@@ -84,6 +84,12 @@
             &.active {
                 order: 1;
                 width: calc(33.33% - 1.6rem);
+
+                @include respond(phone) {
+                    width: 100%;
+                    display: flex;
+                    margin: 2rem 0;
+                }
             }
         }
     }
