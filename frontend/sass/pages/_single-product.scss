@@ -2,12 +2,16 @@
     padding: 25rem 0;
     margin-top: -20vh;
     background-color: $color-grey-light-1;
-
+    text-align: center;
     
     
 
     .u-margin-bottom-big {
         margin-left: 35rem;
+        @include respond(phone) {
+            margin: 0 0 2rem;
+            
+        }
     }
     .heading-secondary {
         padding: 0 4rem;
