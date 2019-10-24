@@ -82,7 +82,14 @@ const slider = () => {
     };
 
 };
-slider();
+
+const sliderCheck = document.querySelector('.slider');
+console.log(sliderCheck)
+
+if(sliderCheck) {
+    slider();
+}
+
 
 
 
@@ -416,8 +423,12 @@ function initMap() {
                 ]
             }
         ], { name: 'Styled Map' });
+        var mapZoom = 7;
+        if(window.outerWidth < 415) {
+            mapZoom = 6;
+        }
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 7,
+        zoom: mapZoom,
         disableDefaultUI: true,
         center: { lat: 45.34994243613083, lng: 23.033166749999964 }
     });

@@ -91,7 +91,7 @@
             background-image: url('../img/piscine.png');
             background-size: cover;
             @include respond(phone) {
-                background-image: url('../img/psicine-mobile.png');
+                background-image: url('../img/piscine-mobile.png');
                 background-size: cover;
             }
         }

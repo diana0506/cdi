@@ -12,6 +12,14 @@
     z-index: 9;
     box-shadow: $box-shadow-xxl;
 
+    @include respond(phone) {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        box-shadow: none;
+    }
+
     h1 {
         color: $color-white;
         font-size: 2rem;
@@ -24,8 +32,13 @@
         height: 16rem;
         margin: -4rem -4rem 2rem;
         overflow: hidden;
-        background-image: linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url('//geo3.ggpht.com/cbk?panoid=EO4-bRVwkI_IWWnJRv8Y7A&output=thumbnail&cb_client=search.LOCAL_UNIVERSAL.gps&thumb=2&w=227&h=160&yaw=284.053&pitch=0&thumbfov=100');
+        background-image: url('//geo3.ggpht.com/cbk?panoid=EO4-bRVwkI_IWWnJRv8Y7A&output=thumbnail&cb_client=search.LOCAL_UNIVERSAL.gps&thumb=2&w=227&h=160&yaw=284.053&pitch=0&thumbfov=100');
         background-size: cover;
+
+        @include respond(phone) {
+            height: 35rem;
+        }
+
         img {
             position: absolute;
             width: 100%;

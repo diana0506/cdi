@@ -3,6 +3,8 @@
     z-index: 2;
     margin-left: -20rem;
     display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
 
     @media(max-width: 1366px) {
         margin-left: 0;
@@ -10,6 +12,10 @@
 
     &__img {
         margin-right: 1.6rem;
+
+        @include respond(phone) {
+            margin: 0 0 2rem 0;
+        }
         img {
             width: 55rem;
         }
