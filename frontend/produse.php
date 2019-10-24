@@ -71,61 +71,61 @@
 
 
                 <div class="gallery">
-                    <a href="sare-tablete-turcia-recristalizate-sac-25kg-cdi-transparent.html" class="gallery__item active gallery__item--1 sare-dedurizare-apa">
+                    <a href="sare-tablete-turcia-recristalizate-sac-25kg-cdi-transparent.php" class="gallery__item active gallery__item--1 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Sare tablete Turcia recristalizate Sac 25 kg (sac cdi transparent)</h3>
                         </div>
                         <img src="img/products/1.4.jpg" alt="Gallery image 1" class="gallery__img">
                     </a>
-                    <a href="sare-tablete-piscina-austria-sac-25kg-solvary-trade.html" class="gallery__item active gallery__item--2 sare-intretinere-piscine">
+                    <a href="sare-tablete-piscina-austria-sac-25kg-solvary-trade.php" class="gallery__item active gallery__item--2 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title">Sare tablete piscina Austria sac 25 kg (Solivary trade)</h3>
                         </div>
                         <img src="img/products/1.1.jpg" alt="Gallery image 2" class="gallery__img">
                     </a>
-                    <a href="sare-tablete-austria-25kg-Solvary-Trade-tablete.html" class="gallery__item active gallery__item--3 sare-dedurizare-apa">
+                    <a href="sare-tablete-austria-25kg-Solvary-Trade-tablete.php" class="gallery__item active gallery__item--3 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Sare tablete Austria sac 25 kg Solvary Trade</h3>
                         </div>
                         <img src="img/products/1.1.jpg" alt="Gallery image 3" class="gallery__img">
                     </a>
-                    <a href="sare-tablete-austria-25kg-Silver-tabs.html" class="gallery__item active gallery__item--4 sare-dedurizare-apa">
+                    <a href="sare-tablete-austria-25kg-Silver-tabs.php" class="gallery__item active gallery__item--4 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Sare tablete Austria 25 kg Silver tabs.</h3>
                         </div>
                         <img src="img/products/1.2.jpg" alt="Gallery image 4" class="gallery__img">
                     </a>
-                    <a href="sare-tablete-belorusia-sac-25kg.mozirsalt.html" class="gallery__item active gallery__item--5 sare-dedurizare-apa">
+                    <a href="sare-tablete-belorusia-sac-25kg.mozirsalt.php" class="gallery__item active gallery__item--5 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title"> Sare tablete Belorusia sac 25 kg ( Mozirsalt )</h3>
                         </div>
                         <img src="img/products/1.3.jpg" alt="Gallery image 5" class="gallery__img">
                     </a>
-                    <a href="sare-dezapezire-sac-25kg.html" class="gallery__item active gallery__item--6 produse-dezapezire">
+                    <a href="sare-dezapezire-sac-25kg.php" class="gallery__item active gallery__item--6 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Sare pentru deszapezire sac 25 kg</h3>
                         </div>
                         <img src="img/products/sare-pentru-deszapezire.jpg" alt="Gallery image 6" class="gallery__img">
                     </a>
-                    <a href="sare-de-mare-tablete-turcia-sac-25kg-sac-pure-white.html" class="gallery__item active gallery__item--7 sare-dedurizare-apa">
+                    <a href="sare-de-mare-tablete-turcia-sac-25kg-sac-pure-white.php" class="gallery__item active gallery__item--7 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Sare de mare tablete Turcia sac 25 kg</h3>
                         </div>
                         <img src="img/products/1.5.jpg" alt="Gallery image 7" class="gallery__img">
                     </a>
-                    <a href="sare-de-mare-extrafina-25kg-sac.html" class="gallery__item active gallery__item--8 sare-intretinere-piscine">
+                    <a href="sare-de-mare-extrafina-25kg-sac.php" class="gallery__item active gallery__item--8 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title"> Sare de mare extrafina sac 25 kg</h3>
                         </div>
                         <img src="img/products/2.3-extrafina.jpg" alt="Gallery image 8" class="gallery__img">
                     </a>
-                    <a href="hipoclorit-de-sodiu-concentratie-12-la-cub-1250 kg.html" class="gallery__item active gallery__item--9 sare-intretinere-piscine">
+                    <a href="hipoclorit-de-sodiu-concentratie-12-la-cub-1250 kg.php" class="gallery__item active gallery__item--9 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title">Hipoclorit de sodiu concentratie 12% la cub 1250 kg</h3>
                         </div>
                         <img src="img/products/2.5.jpg" alt="Gallery image 9" class="gallery__img">
                     </a>
-                    <a href="hipoclorit-de-sodiu-concentratie-12-la-canistra.html" class="gallery__item active gallery__item--10 sare-intretinere-piscine">
+                    <a href="hipoclorit-de-sodiu-concentratie-12-la-canistra.php" class="gallery__item active gallery__item--10 sare-intretinere-piscine">
 
                         <div class="overlay">
                             <h3 class="product-title">Hipoclorit de sodiu concentratie 12% la canistra 25 kg</h3>
@@ -133,20 +133,20 @@
                         <img src="img/products/2.4.jpg" alt="Gallery image 10" class="gallery__img">
                     </a>
 
-                    <a href="clorura-de-magneziu-sac-25kg-import-germania-producator-deusa.html" class="gallery__item active gallery__item--11 produse-dezapezire">
+                    <a href="clorura-de-magneziu-sac-25kg-import-germania-producator-deusa.php" class="gallery__item active gallery__item--11 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Clorura de magneziu sac 25 kg import Germania producator DEUSA</h3>
                         </div>
                         <img src="img/products/3.3.jpg" alt="Gallery image 10" class="gallery__img">
                     </a>
-                    <a href="clorura-de-calciu-tehnica-74-sac-25kg-import-italia-fabrica-solvay.html" class="gallery__item active gallery__item--12 produse-dezapezire">
+                    <a href="clorura-de-calciu-tehnica-74-sac-25kg-import-italia-fabrica-solvay.php" class="gallery__item active gallery__item--12 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Clorura de calciu tehnica 74 % sac 25 kg import Italia fabrica Solvay</h3>
                         </div>
                         <img src="img/products/3.2.jpg" alt="Gallery image 10" class="gallery__img">
                     </a>
 
-                    <a href="clorura-calciu-tehnica-sac-25kg-concentratie-94-97.html" class="gallery__item active gallery__item--13 produse-dezapezire">
+                    <a href="clorura-calciu-tehnica-sac-25kg-concentratie-94-97.php" class="gallery__item active gallery__item--13 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Clorura de calciu tehnica 94-97 % sac 25 kg import Italia fabrica Solvay</h3>
                         </div>
@@ -154,13 +154,13 @@
                     </a>
 
                     <!-- next 5 -->
-                    <!-- <a href="clorura-calciu-tehnica-sac-25kg-concentratie-94-97%.html" class="gallery__item active gallery__item--11 produse-dezapezire">
+                    <!-- <a href="clorura-calciu-tehnica-sac-25kg-concentratie-94-97%.php" class="gallery__item active gallery__item--11 produse-dezapezire">
                     <div class="overlay">
                         <h3 class="product-title">Clorura de calciu tehnica 74 % sac 25 kg import Italia fabrica Solvay</h3>
                     </div>
                     <img src="img/products/3.1.jpg" alt="Gallery image 9" class="gallery__img">
                 </a>
-                <a href="hipoclorit-de-sodiu-concentratie-12-la-canistra.html" class="gallery__item active gallery__item--12 produse-dezapezire">
+                <a href="hipoclorit-de-sodiu-concentratie-12-la-canistra.php" class="gallery__item active gallery__item--12 produse-dezapezire">
                     
                     <div class="overlay">
                         <h3 class="product-title">Clorura de calciu tehnica 74 % sac 25 kg import Italia fabrica Solvay</h3>
@@ -168,20 +168,20 @@
                     <img src="img/products/2.4.jpg" alt="Gallery image 10" class="gallery__img">
                 </a>
 
-                <a href="clorura-de-magneziu-sac-25kg-import-germania-producator-deusa.html" class="gallery__item active gallery__item--13 produse-dezapezire">
+                <a href="clorura-de-magneziu-sac-25kg-import-germania-producator-deusa.php" class="gallery__item active gallery__item--13 produse-dezapezire">
                     <div class="overlay">
                         <h3 class="product-title">Clorura de calciu tehnica 74 % sac 25 kg import Italia fabrica Solvay</h3>
                     </div>
                     <img src="img/products/3.3.jpg" alt="Gallery image 10" class="gallery__img">
                 </a> -->
-                    <a href="sare-dezapezire-ambalata-in-biguri-cantitate-1300kg.html" class="gallery__item active gallery__item--14 produse-dezapezire">
+                    <a href="sare-dezapezire-ambalata-in-biguri-cantitate-1300kg.php" class="gallery__item active gallery__item--14 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Sare dezapezire ambalata in biguri 1300kg</h3>
                         </div>
                         <img src="img/products/sare-deszapezire-biguri-1300-kg.jpg" alt="Gallery image 10" class="gallery__img">
                     </a>
 
-                    <a href="sare-de-mare-tablete-turcia-sac-25kg-pure-white-sac.html" class="gallery__item active gallery__item--15 sare-intretinere-piscine">
+                    <a href="sare-de-mare-tablete-turcia-sac-25kg-pure-white-sac.php" class="gallery__item active gallery__item--15 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title">Sare de mare tablete Turcia 25kg(Pure White)</h3>
                         </div>
