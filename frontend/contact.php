@@ -2,7 +2,7 @@
 
     if (isset($_POST['new_send'])){
 
-        $toAdmin = "alexandru.manta@hotmail.com";
+        $toAdmin = "office@cdigrup.ro";
         $subjectAdmin = "Ati primit o solicitare de informatii de pe siteul www.cdigrup.ro";
 
         $headersAdmin = "MIME-Version: 1.0" . "\r\n";
