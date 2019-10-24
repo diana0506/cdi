@@ -1,3 +1,30 @@
+<?php
+
+    if (isset($_POST['new_send'])){
+
+        $toAdmin = "alexandru.manta@hotmail.com";
+        $subjectAdmin = "Ati primit o solicitare de informatii de pe siteul www.cdigrup.ro";
+
+        $headersAdmin = "MIME-Version: 1.0" . "\r\n";
+        $headersAdmin .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headersAdmin .= 'From: Cdi Grup<office@cdigrup.ro>' . "\r\n";
+
+        $name = $_POST['name'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        $qnt = $_POST['qnt'] . ' kg';
+        $message = $_POST['message'];
+
+        $txtAdmin = "Nume: $name \r\nTelefon: $phone \r\nEmail: $email \r\nCantitate: $qnt \r\nMesaj: $message";
+
+        mail($toAdmin,$subjectAdmin,$txtAdmin,$headersAdmin);
+
+        $_SESSION['succes'] = "Mesajul a fost trimis cu succes. Multumim.";
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,71 +42,25 @@
 </head>
 
 <body>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toogle">
-        <label for="navi-toogle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="index.html" class="navigation__link">Acasa</a></li>
-                <li class="navigation__item">
-                    <a href="despre-noi.html" class="navigation__link">Despre noi</a></li>
-                <li class="navigation__item">
-                    <a href="produse.html" class="navigation__link">Produse</a></li>
-                <li class="navigation__item">
-                    <a href="blog.html" class="navigation__link">Blog</a></li>
-                <li class="navigation__item">
-                    <a href="contact.html" class="navigation__link">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <header class="header header--products">
-        <ul class="header__menu">
-            <li>
-                <a href="tel:+40723123123">+40 723 123 123</a>
-            </li>
-            <li>
-                <a href="index.html">Acasa</a>
-            </li>
-            <li>
-                <a href="despre-noi.html">Despre noi</a>
-            </li>
-            <li>
-                <a href="produse.html">Produse</a>
-            </li>
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-        <div class="header__company-info">
-            <div class="header__logo-box">
-                <img src="img/cdi_group.svg" alt="logo" class="header__logo">
-            </div>
-            <div class="info info--no-rotate">
-                <span class="slogan">SPECIALISTI IN SARE</span>
-                <div class="social">
-                    <a href="">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="header__overlay"></div>
-    </header>
+    <?php include('./blocks/header.php'); ?>
     <section class="section-book">
         <div class="row">
+            <?php
+                if (isset($_SESSION['succes'])) : ?>
+                    <div class="alert alert--success">
+                        <!-- <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">Close</span>
+                        </button> -->
+                        <?= $_SESSION['succes']; ?>
+                    </div>
+                    <?php unset($_SESSION['succes']);
+                endif ;
+            ?>
             <div class="book">
                 <div class="book__form">
-                    <form action="#" class="form">
+                    
+                    <form action="" method="post" class="form">
                         <div class="u-margin-bottom-medium">
                             <h2 class="heading-secondary">
                                 Cerere oferta
@@ -87,27 +68,27 @@
                         </div>
 
                         <div class="form__group">
-                            <input type="text" class="form__input" placeholder="ex: Popescu Ion" id="name" required>
+                            <input type="text" class="form__input" placeholder="ex: Popescu Ion" id="name" name="name" required>
                             <label for="name" class="form__label">Nume complet</label>
                         </div>
 
                         <div class="form__group">
-                            <input type="email" class="form__input" placeholder="ex: popescu.ion@email.ro" id="email" required>
+                            <input type="email" class="form__input" placeholder="ex: popescu.ion@email.ro" id="email" name="email" required>
                             <label for="email" class="form__label">Email</label>
                         </div>
 
                         <div class="form__group">
-                            <input type="phone" class="form__input" placeholder="ex: 07xx xxx xxx" id="phone" required>
+                            <input type="phone" class="form__input" placeholder="ex: 07xx xxx xxx" id="phone" name="phone" required>
                             <label for="phone" class="form__label">Telefon</label>
                         </div>
 
                         <div class="form__group">
-                            <input type="text" class="form__input" placeholder="ex: 20kg" id="qnt" required>
+                            <input type="text" class="form__input" placeholder="ex: 20kg" id="qnt" name="qnt" required>
                             <label for="qnt" class="form__label">Cantitate</label>
                         </div>
 
                         <div class="form__group">
-                            <textarea class="form__input" placeholder="Mesajul tau" id="message" required></textarea>
+                            <textarea class="form__input" placeholder="Mesajul tau" id="message" required name="message"></textarea>
                             <label for="message" class="form__label">Mesaj</label>
                         </div>
 
@@ -128,6 +109,7 @@
                                 </label>
                             </div>
                         </div> -->
+                        <input type="hidden" name="new_send" value="true">
 
                         <div class="form__group">
                             <button class="btn btn--green">Trimite &rarr;</button>
@@ -180,58 +162,7 @@
         </div>
         <div id="map" class="map"></div>
     </section>
-    <footer class="footer">
-     
-        <div class="footer__logo-box">
-            <picture class="footer__logo">
-                <source srcset="img/cdi_group.svg 1x, img/cdi_group.svg 2x" media="(max-width: 37.5em)">
-                <img srcset="img/cdi_group.svg 1x, img/cdi_group.svg 2x" alt="Full logo" src="img/cdi_group.svg">
-            </picture>
-        </div>
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="/" class="footer__link">Acasa</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="despre-noi.html" class="footer__link">Despre noi</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="produse.html" class="footer__link">Produse</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="blog.html" class="footer__link">Blog</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="company-contact">
-                        <h4>CDI DISTRIBUTION GRUP , Str. Energiei, nr.2 Dobroiesti, Ilfov</h4>
-                        <p>
-                            <a href="mailto:office@cdigrup.ro">Email: office@cdigrup.ro</a>
-                        </p>
-                        <p>
-                            <a href="tel:+40721.969.733">Telefon: 0721.969.733</a>
-                        </p>
-                        <p><a href="tel:+40727.838.455">Telefon: 0727.838.455</a></p>
-                        <p><a href="mailto:vanzari@cdigrup.ro">Email: vanzari@cdigrup.ro</a></p>
-                       
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-of-2">
-                <p class="footer__copyright">
-                    <a href="#" class="footer__link">CDI Distribution Grup</a> este o firma privata cu capital integral romanesc, care si-a inceput activitatea in 2004. A urmat o evolutie ascendenta
-                    <a href="#" class="footer__link">in topul firmelor private de distributie</a> din Romania. Ne-am remarcat in primul rand prin preturi competitive, servicii de calitate, flexibilitate in comunicarea cu clientii promptitudine si comunicare
-                    24/24 oricand si oriunde pe orice distanta.
-                </p>
-            </div>
-        </div>
-    </footer>
+    <?php include('./blocks/footer.php'); ?>
     <script src="js/scripts.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjdLxZsC1eR4RzY3grkbGnDckk7DcCmBU&callback=initMap">
     </script>
