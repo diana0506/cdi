@@ -14,100 +14,7 @@
 </head>
 
 <body>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toogle">
-        <label for="navi-toogle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="index.html" class="navigation__link">Acasa</a></li>
-                <li class="navigation__item">
-                    <a href="despre-noi.html" class="navigation__link">Despre noi</a></li>
-                <li class="navigation__item">
-                    <a href="produse.html" class="navigation__link">Produse</a></li>
-                <li class="navigation__item">
-                    <a href="blog.html" class="navigation__link">Blog</a></li>
-                <li class="navigation__item">
-                    <a href="contact.html" class="navigation__link">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <header class="header slider">
-        <ul class="header__menu">
-            <li>
-                <a href="tel:+40723123123">+40 723 123 123</a>
-            </li>
-            <li>
-                <a>Acasa</a>
-            </li>
-            <li>
-                <a href="despre-noi.html">Despre noi</a>
-            </li>
-            <li>
-                <a href="produse.html">Produse</a>
-            </li>
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-        <div class="header__company-info">
-            <div class="header__logo-box">
-                <img src="img/cdi_group.svg" alt="logo" class="header__logo">
-                <div class="count-slider">
-                    <span class="count-slider__current">01</span>
-                    <span class="count-slider__total">/03</span>
-                </div>
-                <div class="controls">
-                    <a class="controls__arrow controls__arrow--prev">
-                        <i class="fas fa-angle-left"></i>
-                    </a>
-                    <a class="controls__arrow controls__arrow--next">
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="info">
-                <span class="slogan">SPECIALISTI IN SARE</span>
-                <div class="social">
-                    <a href="">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="header__text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">Produse din sare la cele mai inalte standarde de calitate</span>
-                <span class="heading-primary--sub">Suntem in topul distribuitorilor de sare si derivate ale acesteia. Ne recomanda diversitatea produselor si promptitudinea livrarii</span>
-            </h1>
-            <a href="produse.html" class="btn btn--white btn--animated">Vezi oferta completa</a>
-        </div>
-        <div class="header__text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">Solutii eficiente pentru domeniul tau de activitate</span>
-                <span class="heading-primary--sub">Tablete de sare dedurizare pentru diverse aplicatii industriale si rezidentiale. Fabricate conform reglementarilor in vigoare EN 973 Type A</span>
-            </h1>
-            <a href="produse.html" class="btn btn--white btn--animated">Vezi oferta completa</a>
-        </div>
-        <div class="header__text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">Ai siguranta ca alegi doar produsele potrivite</span>
-                <span class="heading-primary--sub">Contacteaza-ne pentru recomandari de selectie si transmiterea unei oferte adaptate necesitatii de utilizare</span>
-            </h1>
-            <a href="produse.html" class="btn btn--white btn--animated">Vezi oferta completa</a>
-        </div>
-    </header>
-
+<?php include('./blocks/header.php'); ?>
     <main>
         <section class="section-about">
             <div class="u-center-text u-margin-bottom-big">
@@ -326,61 +233,8 @@
             <div id="map" class="map"></div>
         </section>
     </main>
-    <footer class="footer">
-
-        <div class="footer__logo-box">
-            <picture class="footer__logo">
-                <source srcset="img/cdi_group.svg 1x, img/cdi_group.svg 2x" media="(max-width: 37.5em)">
-                <img srcset="img/cdi_group.svg 1x, img/cdi_group.svg 2x" alt="Full logo" src="img/cdi_group.svg">
-            </picture>
-        </div>
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="/" class="footer__link">Acasa</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="despre-noi.html" class="footer__link">Despre noi</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="produse.html" class="footer__link">Produse</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="blog.html" class="footer__link">Blog</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="contact.html" class="footer__link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="company-contact">
-                        <h4>CDI DISTRIBUTION GRUP , Str. Energiei, nr.2 Dobroiesti, Ilfov</h4>
-                        <p>
-                            <a href="mailto:office@cdigrup.ro">Email: office@cdigrup.ro</a>
-                        </p>
-                        <p>
-                            <a href="tel:+40721.969.733">Telefon: 0721.969.733</a>
-                        </p>
-                        <p><a href="tel:+40727.838.455">Telefon: 0727.838.455</a></p>
-                        <p><a href="mailto:vanzari@cdigrup.ro">Email: vanzari@cdigrup.ro</a></p>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-of-2">
-                <p class="footer__copyright">
-                    <a href="#" class="footer__link">CDI Distribution Grup</a> este o firma privata cu capital integral romanesc, care si-a inceput activitatea in 2004. A urmat o evolutie ascendenta
-                    <a href="#" class="footer__link">in topul firmelor private de distributie</a> din Romania. Ne-am remarcat in primul rand prin preturi competitive, servicii de calitate, flexibilitate in comunicarea cu clientii promptitudine si comunicare
-                    24/24 oricand si oriunde pe orice distanta.
-                </p>
-            </div>
-        </div>
-    </footer>
-    <a class="whatsapp-module" href="https://api.whatsapp.com/send?phone=0785696811">
-        <img src="img/WhatsApp.svg" alt="">
-    </a>
+    <?php include('./blocks/footer.php'); ?>
+  
     <script src="js/scripts.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjdLxZsC1eR4RzY3grkbGnDckk7DcCmBU&callback=initMap">
     </script>

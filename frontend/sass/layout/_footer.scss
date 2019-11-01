@@ -50,6 +50,11 @@
             display: inline-block;
             transition: all .2s;
         }
+
+        &--active {
+            text-transform: uppercase;
+            color: $color-grey-dark-2;
+        }
         &:hover,
         &:active {
             // color: $color-primary;

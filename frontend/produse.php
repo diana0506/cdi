@@ -13,66 +13,7 @@
 </head>
 
 <body>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toogle">
-        <label for="navi-toogle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="index.html" class="navigation__link">Acasa</a></li>
-                <li class="navigation__item">
-                    <a href="despre-noi.html" class="navigation__link">Despre noi</a></li>
-                <li class="navigation__item">
-                    <a href="produse.html" class="navigation__link">Produse</a></li>
-                <li class="navigation__item">
-                    <a href="blog.html" class="navigation__link">Blog</a></li>
-                <li class="navigation__item">
-                    <a href="contact.html" class="navigation__link">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <header class="header header--products">
-        <ul class="header__menu">
-            <li>
-                <a href="tel:+40723123123">+40 723 123 123</a>
-            </li>
-            <li>
-                <a href="index.html">Acasa</a>
-            </li>
-            <li>
-                <a href="despre-noi.html">Despre noi</a>
-            </li>
-            <li>
-                <a>Produse</a>
-            </li>
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-        <div class="header__company-info">
-            <div class="header__logo-box">
-                <img src="img/cdi_group.svg" alt="logo" class="header__logo">
-            </div>
-            <div class="info info--no-rotate">
-                <span class="slogan">SPECIALISTI IN SARE</span>
-                <div class="social">
-                    <a href="">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="header__overlay"></div>
-    </header>
+    <?php include('./blocks/header.php'); ?>
 
     <main>
         <section class="section-products">
@@ -130,61 +71,61 @@
 
 
                 <div class="gallery">
-                    <a href="sare-tablete-turcia-recristalizate-sac-25kg-cdi-transparent.html" class="gallery__item active gallery__item--1 sare-dedurizare-apa">
+                    <a href="sare-tablete-turcia-recristalizate-sac-25kg-cdi-transparent.php" class="gallery__item active gallery__item--1 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Sare tablete Turcia recristalizate Sac 25 kg (sac cdi transparent)</h3>
                         </div>
                         <img src="img/products/1.4.jpg" alt="Gallery image 1" class="gallery__img">
                     </a>
-                    <a href="sare-tablete-piscina-austria-sac-25kg-solvary-trade.html" class="gallery__item active gallery__item--2 sare-intretinere-piscine">
+                    <a href="sare-tablete-piscina-austria-sac-25kg-solvary-trade.php" class="gallery__item active gallery__item--2 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title">Sare tablete piscina Austria sac 25 kg (Solivary trade)</h3>
                         </div>
                         <img src="img/products/1.1.jpg" alt="Gallery image 2" class="gallery__img">
                     </a>
-                    <a href="sare-tablete-austria-25kg-Solvary-Trade-tablete.html" class="gallery__item active gallery__item--3 sare-dedurizare-apa">
+                    <a href="sare-tablete-austria-25kg-Solvary-Trade-tablete.php" class="gallery__item active gallery__item--3 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Sare tablete Austria sac 25 kg Solvary Trade</h3>
                         </div>
                         <img src="img/products/1.1.jpg" alt="Gallery image 3" class="gallery__img">
                     </a>
-                    <a href="sare-tablete-austria-25kg-Silver-tabs.html" class="gallery__item active gallery__item--4 sare-dedurizare-apa">
+                    <a href="sare-tablete-austria-25kg-Silver-tabs.php" class="gallery__item active gallery__item--4 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Sare tablete Austria 25 kg Silver tabs.</h3>
                         </div>
                         <img src="img/products/1.2.jpg" alt="Gallery image 4" class="gallery__img">
                     </a>
-                    <a href="sare-tablete-belorusia-sac-25kg.mozirsalt.html" class="gallery__item active gallery__item--5 sare-dedurizare-apa">
+                    <a href="sare-tablete-belorusia-sac-25kg.mozirsalt.php" class="gallery__item active gallery__item--5 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title"> Sare tablete Belorusia sac 25 kg ( Mozirsalt )</h3>
                         </div>
                         <img src="img/products/1.3.jpg" alt="Gallery image 5" class="gallery__img">
                     </a>
-                    <a href="sare-dezapezire-sac-25kg.html" class="gallery__item active gallery__item--6 produse-dezapezire">
+                    <a href="sare-dezapezire-sac-25kg.php" class="gallery__item active gallery__item--6 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Sare pentru deszapezire sac 25 kg</h3>
                         </div>
                         <img src="img/products/sare-pentru-deszapezire.jpg" alt="Gallery image 6" class="gallery__img">
                     </a>
-                    <a href="sare-de-mare-tablete-turcia-sac-25kg-sac-pure-white.html" class="gallery__item active gallery__item--7 sare-dedurizare-apa">
+                    <a href="sare-de-mare-tablete-turcia-sac-25kg-sac-pure-white.php" class="gallery__item active gallery__item--7 sare-dedurizare-apa">
                         <div class="overlay">
                             <h3 class="product-title">Sare de mare tablete Turcia sac 25 kg</h3>
                         </div>
                         <img src="img/products/1.5.jpg" alt="Gallery image 7" class="gallery__img">
                     </a>
-                    <a href="sare-de-mare-extrafina-25kg-sac.html" class="gallery__item active gallery__item--8 sare-intretinere-piscine">
+                    <a href="sare-de-mare-extrafina-25kg-sac.php" class="gallery__item active gallery__item--8 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title"> Sare de mare extrafina sac 25 kg</h3>
                         </div>
                         <img src="img/products/2.3-extrafina.jpg" alt="Gallery image 8" class="gallery__img">
                     </a>
-                    <a href="hipoclorit-de-sodiu-concentratie-12-la-cub-1250 kg.html" class="gallery__item active gallery__item--9 sare-intretinere-piscine">
+                    <a href="hipoclorit-de-sodiu-concentratie-12-la-cub-1250 kg.php" class="gallery__item active gallery__item--9 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title">Hipoclorit de sodiu concentratie 12% la cub 1250 kg</h3>
                         </div>
                         <img src="img/products/2.5.jpg" alt="Gallery image 9" class="gallery__img">
                     </a>
-                    <a href="hipoclorit-de-sodiu-concentratie-12-la-canistra.html" class="gallery__item active gallery__item--10 sare-intretinere-piscine">
+                    <a href="hipoclorit-de-sodiu-concentratie-12-la-canistra.php" class="gallery__item active gallery__item--10 sare-intretinere-piscine">
 
                         <div class="overlay">
                             <h3 class="product-title">Hipoclorit de sodiu concentratie 12% la canistra 25 kg</h3>
@@ -192,20 +133,20 @@
                         <img src="img/products/2.4.jpg" alt="Gallery image 10" class="gallery__img">
                     </a>
 
-                    <a href="clorura-de-magneziu-sac-25kg-import-germania-producator-deusa.html" class="gallery__item active gallery__item--11 produse-dezapezire">
+                    <a href="clorura-de-magneziu-sac-25kg-import-germania-producator-deusa.php" class="gallery__item active gallery__item--11 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Clorura de magneziu sac 25 kg import Germania producator DEUSA</h3>
                         </div>
                         <img src="img/products/3.3.jpg" alt="Gallery image 10" class="gallery__img">
                     </a>
-                    <a href="clorura-de-calciu-tehnica-74-sac-25kg-import-italia-fabrica-solvay.html" class="gallery__item active gallery__item--12 produse-dezapezire">
+                    <a href="clorura-de-calciu-tehnica-74-sac-25kg-import-italia-fabrica-solvay.php" class="gallery__item active gallery__item--12 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Clorura de calciu tehnica 74 % sac 25 kg import Italia fabrica Solvay</h3>
                         </div>
                         <img src="img/products/3.2.jpg" alt="Gallery image 10" class="gallery__img">
                     </a>
 
-                    <a href="clorura-calciu-tehnica-sac-25kg-concentratie-94-97.html" class="gallery__item active gallery__item--13 produse-dezapezire">
+                    <a href="clorura-calciu-tehnica-sac-25kg-concentratie-94-97.php" class="gallery__item active gallery__item--13 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Clorura de calciu tehnica 94-97 % sac 25 kg import Italia fabrica Solvay</h3>
                         </div>
@@ -213,13 +154,13 @@
                     </a>
 
                     <!-- next 5 -->
-                    <!-- <a href="clorura-calciu-tehnica-sac-25kg-concentratie-94-97%.html" class="gallery__item active gallery__item--11 produse-dezapezire">
+                    <!-- <a href="clorura-calciu-tehnica-sac-25kg-concentratie-94-97%.php" class="gallery__item active gallery__item--11 produse-dezapezire">
                     <div class="overlay">
                         <h3 class="product-title">Clorura de calciu tehnica 74 % sac 25 kg import Italia fabrica Solvay</h3>
                     </div>
                     <img src="img/products/3.1.jpg" alt="Gallery image 9" class="gallery__img">
                 </a>
-                <a href="hipoclorit-de-sodiu-concentratie-12-la-canistra.html" class="gallery__item active gallery__item--12 produse-dezapezire">
+                <a href="hipoclorit-de-sodiu-concentratie-12-la-canistra.php" class="gallery__item active gallery__item--12 produse-dezapezire">
                     
                     <div class="overlay">
                         <h3 class="product-title">Clorura de calciu tehnica 74 % sac 25 kg import Italia fabrica Solvay</h3>
@@ -227,20 +168,20 @@
                     <img src="img/products/2.4.jpg" alt="Gallery image 10" class="gallery__img">
                 </a>
 
-                <a href="clorura-de-magneziu-sac-25kg-import-germania-producator-deusa.html" class="gallery__item active gallery__item--13 produse-dezapezire">
+                <a href="clorura-de-magneziu-sac-25kg-import-germania-producator-deusa.php" class="gallery__item active gallery__item--13 produse-dezapezire">
                     <div class="overlay">
                         <h3 class="product-title">Clorura de calciu tehnica 74 % sac 25 kg import Italia fabrica Solvay</h3>
                     </div>
                     <img src="img/products/3.3.jpg" alt="Gallery image 10" class="gallery__img">
                 </a> -->
-                    <a href="sare-dezapezire-ambalata-in-biguri-cantitate-1300kg.html" class="gallery__item active gallery__item--14 produse-dezapezire">
+                    <a href="sare-dezapezire-ambalata-in-biguri-cantitate-1300kg.php" class="gallery__item active gallery__item--14 produse-dezapezire">
                         <div class="overlay">
                             <h3 class="product-title">Sare dezapezire ambalata in biguri 1300kg</h3>
                         </div>
                         <img src="img/products/sare-deszapezire-biguri-1300-kg.jpg" alt="Gallery image 10" class="gallery__img">
                     </a>
 
-                    <a href="sare-de-mare-tablete-turcia-sac-25kg-pure-white-sac.html" class="gallery__item active gallery__item--15 sare-intretinere-piscine">
+                    <a href="sare-de-mare-tablete-turcia-sac-25kg-pure-white-sac.php" class="gallery__item active gallery__item--15 sare-intretinere-piscine">
                         <div class="overlay">
                             <h3 class="product-title">Sare de mare tablete Turcia 25kg(Pure White)</h3>
                         </div>
@@ -342,58 +283,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-
-        <div class="footer__logo-box">
-            <picture class="footer__logo">
-                <source srcset="img/cdi_group.svg 1x, img/cdi_group.svg 2x" media="(max-width: 37.5em)">
-                <img srcset="img/cdi_group.svg 1x, img/cdi_group.svg 2x" alt="Full logo" src="img/cdi_group.svg">
-            </picture>
-        </div>
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="/" class="footer__link">Acasa</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="despre-noi.html" class="footer__link">Despre noi</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link">Produse</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="blog.html" class="footer__link">Blog</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="contact.html" class="footer__link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="company-contact">
-                        <h4>CDI DISTRIBUTION GRUP , Str. Energiei, nr.2 Dobroiesti, Ilfov</h4>
-                        <p>
-                            <a href="mailto:office@cdigrup.ro">Email: office@cdigrup.ro</a>
-                        </p>
-                        <p>
-                            <a href="tel:+40721.969.733">Telefon: 0721.969.733</a>
-                        </p>
-                        <p><a href="tel:+40727.838.455">Telefon: 0727.838.455</a></p>
-                        <p><a href="mailto:vanzari@cdigrup.ro">Email: vanzari@cdigrup.ro</a></p>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-of-2">
-                <p class="footer__copyright">
-                    <a href="#" class="footer__link">CDI Distribution Grup</a> este o firma privata cu capital integral romanesc, care si-a inceput activitatea in 2004. A urmat o evolutie ascendenta
-                    <a href="#" class="footer__link">in topul firmelor private de distributie</a> din Romania. Ne-am remarcat in primul rand prin preturi competitive, servicii de calitate, flexibilitate in comunicarea cu clientii promptitudine si comunicare
-                    24/24 oricand si oriunde pe orice distanta.
-                </p>
-            </div>
-        </div>
-    </footer>
+    <?php include('./blocks/footer.php'); ?>
     <script>
         // product filter
 

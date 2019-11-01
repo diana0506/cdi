@@ -1,0 +1,22 @@
+.alert {
+    padding: 2rem;
+    font-size: 1.6rem;
+    color: $color-white;
+    margin-bottom: 4rem;
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 2rem;
+        color: $color-white;
+        background: transparent;
+        outline: none;
+        border: none;    
+    }
+
+    &--success{
+        background-color: $color-green-500;
+    }
+}
