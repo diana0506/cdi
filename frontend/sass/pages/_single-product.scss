@@ -16,4 +16,13 @@
     .heading-secondary {
         padding: 0 4rem;
     }
+
+    .product-actions {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            margin: 0 1.6rem;
+        }
+    }
 }

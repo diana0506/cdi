@@ -116,6 +116,10 @@
         position: relative;
         padding: 6rem 4rem 17.5rem 4rem;
         background-color: $color-grey-light-2;
+
+        &:hover {
+            cursor: pointer;
+        }
         .count-slider {
             position: absolute;
             bottom: 6rem;
